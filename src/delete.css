@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  -webkit-transition: ease-in-out 500ms background;
+  transition: ease-in-out 500ms background;
+}
+
+.div:hover {
+  background-color: black;
+}

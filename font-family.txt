@@ -1,0 +1,17 @@
+
+// font-family: 'Bad Script', cursive;
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Cookie', cursive;
+// font-family: 'Courgette', cursive;
+// font-family: 'Explora', cursive;
+// font-family: 'Orbitron', sans-serif;
+// font-family: 'Oxanium', cursive;
+// font-family: 'Palanquin', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Quintessential', cursive;
+// font-family: 'Saira Semi Condensed', sans-serif;
+// font-family: 'Satisfy', cursive;
+// font-family: 'Supermercado One', cursive;
+// font-family: 'Tangerine', cursive;
+// font-family: 'Ubuntu', sans-serif;
+// font-family: 'Zen Kurenaido', sans-serif;

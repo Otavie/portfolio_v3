@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap');
+
+:root{
+    --ff-landing-title-bebas: 'Bebas Neue', cursive;
+    --ff-landing-title-oxanium: 'Oxanium', cursive;
+    --ff-landing-title-orbitron: 'Orbitron', sans-serif;
+    --ff-body-palandquin: 'Palanquin', sans-serif;
+    --ff-body-poppins: 'Poppins', sans-serif;
+    --ff-body-saira: 'Saira Semi Condensed', sans-serif;
+    --ff-fancy-body-bad-script: 'Bad Script', cursive;
+    --ff-fancy-body-courgette: 'Courgette', cursive;
+    --ff-fancy-body-title: 'Cookie', cursive;
+
+    --primary-color: #eeeee4;
+    --primary-bg-color: #091F47;
+    --hover-effect-color: rgb(180, 164, 164);
+}
+
+@mixin position-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin vertical-position-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin transition-in-x{
+    transform: translateX(0vw);
+    transition: transform ease-in-out 1000ms;
+}
+
+@mixin transition-out-x{
+    transform: translateX(100vw);
+    transition: transform ease-in-out 1000ms;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me{
+    min-height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.about-me__head{
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1{
+        font-family: var(--ff-landing-title-orbitron);
+        font-size: 4rem;
+        color: white;
+    }
+}
+
+.about-me__head.day{
+    background-color: white;
+    h1{
+        color: var(--primary-bg-color);
+    }
+}
+
+.about-me__head-h1{
+    transform: scale(0);
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out, transform 1500ms linear;
+}
+
+.about-me__head-h1.show{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.about-me-h2__outer{
+    @include flex-center;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 750ms ease-in-out, transform 1000ms linear;
+}
+
+.about-me-h2__outer.show{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.about-me__content__name{
+    @include flex-center;
+    min-height: 100px;
+    position: relative;
+    align-items: center;
+}
+
+.smile-emoji{
+    cursor: pointer;
+    display: inline-block;
+    width: 4rem;
+    transition: transform ease-in-out 500ms;
+    font-size: 4rem;
+    z-index: 1;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    margin-right: 0.125rem;
+}
+
+.smile-emoji.day{
+    border: 5px solid black;
+}
+
+.about-me-h2{
+    display: flex;
+    align-self: center;
+}
+
+.first-letter-large,
+.about-me-3{
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1000ms ease-in-out, transform 1000ms linear;
+}
+
+.about-me-2,
+.about-me-4{
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 750ms ease-in-out, transform 750ms linear;
+}
+
+.first-letter-large.show,
+.about-me-2.show,
+.about-me-3.show,
+.about-me-4.show{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.about-me__content{
+    margin: 0 auto;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 100px 0px;
+    
+    h2{
+        font-family: var(--ff-fancy-body-bad-script);
+        font-size: 4rem;
+        color: var(--primary-color);
+    }
+
+    p{
+        font-family: var(--ff-body-poppins);
+        font-weight: 200;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: white;
+        color: gray;
+        text-shadow: 0.5px 0px 0px rgba(255, 255, 255, 0.8);
+        margin-top: 1.2rem;
+        text-align: justify;
+    }
+
+    .about-me-4{
+        text-align: center;
+    }
+}
+
+.about-me__content.day{
+    h2{
+        color: var(--primary-bg-color);
+    }
+}
+
+.about-me-emphasise{
+    font-weight: 400;
+    color: rgb(180, 170, 170);
+    text-shadow: 0.5px 0px 0px rgba(255, 255, 255, 0.8);
+    text-shadow: 0.5px 0px 0px gray;
+}
+
+.about-me-emphasise.day{
+    color: gray;
+    text-shadow: 1px 0px 1px black;
+    text-shadow: 0.5px 0px 1px gray;
+    color: var(--primary-bg-color);
+    color: rgba(9, 31, 71, 0.95);
+}
+
+.three-dots{
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.about-me__content__write-up .skill-sets{
+    margin-top: -2.75rem;
+    border: none;
+
+    .skill-sets__img{
+        border: none;
+        z-index: 1;
+    }
+}
+
+.about-me__content__write-up .skill-sets .skill-sets__img{
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+.skill-sets__img img{
+    transition: transform ease-in-out 750ms;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+
+.about-me__content__write-up .skill-sets .skill-sets__img img:hover{
+    transform: rotate(360deg) scale(1.1);
+}
+
+.skill-sets__img img.day{
+    background-color: white;
+    border-left: 1px solid var(--primary-bg-color);
+    border-bottom: 1px solid var(--primary-bg-color);
+}
+
+.first-letter-large::first-letter {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.about-me__content__write-up{
+    width: 100%;
+    min-height: 50vh;
+    padding: 0;
+    
+    p{
+        line-height: 1.75rem;
+        font-size: 1rem;
+    }
+} 
+  
+
+
+
+@media only screen and (min-width: 600px){
+    header{
+        background-color: red;
+    }
+
+    .about-me__content{
+        padding: 0px;
+    }
+
+    .about-me__content__write-up{
+        width: 100%;
+        min-height: 50vh;
+        padding: 0 10%;
+        
+        p{
+            line-height: 2.1rem;
+        }
+    }    
+
+    .first-letter-large::first-letter {
+        font-size: 5em;
+        font-weight: 300;
+    }
+
+    .about-me__content__write-up{
+        width: 100%;
+        min-height: 50vh;
+        padding: 0;
+        
+        p{
+            line-height: 2rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .about-me__head{
+        h1{
+            font-size: 6rem;
+        }
+    }
+
+    .smile-emoji{
+        width: 4.5rem;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    header{
+        background-color: green;
+    }
+
+    .contact-me__head h2{
+        font-size: 5rem
+    }
+
+    .about-me__content{
+        @include flex-center;
+        text-align: center;
+        color: red;
+        padding-bottom: 70px;
+        h2{
+            text-align: center;
+            font-size: 5rem;
+            color: var(--primary-color);
+            padding: 1.45rem 0rem;
+        }
+    }
+
+    .smile-emoji{
+        width: 5.5rem;
+    }
+
+    .about-me__content__write-up{
+        width: 90%;
+        min-height: 50vh;
+        padding: 0 10%;
+        
+        p{
+            line-height: 2.6rem;
+            font-size: 1.5rem;
+        }
+    }    
+
+    .first-letter-large::first-letter {
+        font-size: 5em;
+        font-weight: 300;
+    } 
+    
+    .about-me__head{
+        height: 40vh;
+        h1{
+            font-size: 7.5rem;
+        }
+    }
+
+    .about-me__content__write-up .skill-sets{
+        margin-top: -3.65rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+    header{
+        background-color: purple;
+    }
+
+    .about-me__head{
+        height: 40vh;
+        h1{
+            font-size: 7.5rem;
+        }
+    }
+
+    .smile-emoji{
+        width: 6rem;
+    }
+
+}
