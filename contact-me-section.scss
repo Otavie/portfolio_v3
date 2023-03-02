@@ -50,8 +50,8 @@
     width: 100%;
     color: white;
     position: relative;
-    border: 2px solid red;
-    margin-top: -5rem;
+    border-left: 5px solid gray;
+    border-right: 5px solid gray;
 }
 
 .contact-me__head{
@@ -66,7 +66,6 @@
     opacity: 0;
     transform: scale(0);
     transition: transform 1500ms ease-in-out, opacity 1500ms ease-in-out;
-
     h1{
         font-family: var(--ff-landing-title-orbitron);
         font-size: 6rem;
@@ -246,7 +245,9 @@
 
 footer {
     background-color: black;
-    min-height: 45px;
+    background-color: red;
+    // min-height: 45px;
+    height: 50px;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -330,13 +331,11 @@ footer {
     }
       
     .social-img-github{
-        padding: 2px;
         padding: 1.5px;
     }
 
     .contact-me-section{
         min-height: calc(100vh - 70px);
-        margin-top: -5rem;
     }
 
     .line-1{

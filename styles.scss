@@ -518,7 +518,7 @@ header nav ul li a:active{
     z-index: -2;
     width: 100%;
     color: rgba(238, 238, 228, 0.4);
-
+    
     h3{
         font-size: 4rem;   
     }
@@ -537,6 +537,7 @@ header nav ul li a:active{
     height: calc(100vh - 100px);
     height: 100vh;
     width: 90%;
+    width: 100%;
     background-color: var(--primary-bg-color);
     background-color: black;
     transition: transform 1000ms ease-in-out;
@@ -561,7 +562,7 @@ header nav ul li a:active{
     position: fixed;
     height: calc(100vh - 100px);
     height: 100vh;
-    width: 90%;
+    width: 100%;
     background-color: var(--primary-bg-color);
     background-color: black;
     transform: translateX(0vw);
@@ -898,7 +899,6 @@ header nav ul li a:active{
     }
 
     .container-nav{
-        width: 85%;
         width: 90%;
     }
 
