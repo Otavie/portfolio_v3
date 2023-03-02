@@ -2,8 +2,7 @@
 const projectsHead = document.querySelector('.projects-head');
 const projectsHeadH1 = document.querySelector('.projects-head-h1');
 options = {
-    threshold: 0.5,
-    // rootMargin: '50px',
+    threshold: 0.5
 }
 
 function toggleProjectsH1(entries){
@@ -28,12 +27,10 @@ observerProjectsItemHeadOne.observe(projectsItemHeadOne)
 
 // For the First project Text and Images
 const projectsItemContentsWriteOne = document.getElementById('projects-item-contents-write-1');
-// const projectsItemContentsWriteOneH2 = document.querySelector('.projects-item-contents-write-1');
 const projectsItemContentsWriteOneH3 = document.querySelector('.projects-item-contents-write-1');
 const projectsItemContentsWriteOneP = document.querySelector('.projects-item-contents-write-1');
 function toggleProjectsWriteOne(entries){
     entries.forEach(entry =>{
-        // projectsItemContentsWriteOneH2.classList.toggle('show', entry.isIntersecting);
         projectsItemContentsWriteOneH3.classList.toggle('show', entry.isIntersecting);
         projectsItemContentsWriteOneP.classList.toggle('show', entry.isIntersecting);
     });
@@ -44,7 +41,6 @@ observerProjectsItemContentsWriteOne.observe(projectsItemContentsWriteOneH3); //
 
 
 const projectsItemContentsImgOne = document.querySelector('.projects-item-contents-img-1');
-// const project1Img1Left = document.querySelector('.project-1-img-1-left');
 function toggleProjectsImgOneLeft(entries){
     entries.forEach(entry =>{
         project1Img1Left.classList.toggle('show', entry.isIntersecting);
@@ -53,7 +49,6 @@ function toggleProjectsImgOneLeft(entries){
 const observerProjectsImgOneLeft = new IntersectionObserver(toggleProjectsImgOneLeft, options);
 observerProjectsImgOneLeft.observe(projectsItemContentsImgOne);
 
-// const project1Img1Right = document.querySelector('.project-1-img-1-right');
 function toggleProjectsImgOneRight(entries){
     entries.forEach(entry =>{
         project1Img1Right.classList.toggle('show', entry.isIntersecting);
@@ -83,7 +78,6 @@ const projectTwoImgTwo = document.querySelector('.project-2-img-2');
 function toggleProjectsWriteTwo(entries){
     entries.forEach(entry =>{
         projectsItemContentsWriteRightH2.classList.toggle('show', entry.isIntersecting);
-        // projectsItemContentsWriteTwoP.classList.toggle('show', entry.isIntersecting);
         projectTwoImgTwo.classList.toggle('show', entry.isIntersecting);
     });
 }
@@ -119,7 +113,6 @@ observerProjectsItemContentsWriteThree.observe(projectsItemContentsWriteThree)
 const projectsItemContentsImgThree = document.querySelector('.projects-item-contents-img-3');
 function toggleProjectsImgThreeLeft(entries){
     entries.forEach(entry =>{
-        // projectThreeImgThree.classList.toggle('show', entry.isIntersecting);
         project3Img3Left.classList.toggle('show', entry.isIntersecting);
     });
 }
@@ -128,38 +121,11 @@ observerProjectsImgThreeLeft.observe(projectsItemContentsImgThree);
 
 function toggleProjectsImgThreeRight(entries){
     entries.forEach(entry =>{
-        // projectThreeImgThree.classList.toggle('show', entry.isIntersecting);
         project3Img3Right.classList.toggle('show', entry.isIntersecting);
     });
 }
 const observerProjectsImgThreeRight = new IntersectionObserver(toggleProjectsImgThreeRight, options);
 observerProjectsImgThreeRight.observe(projectsItemContentsImgThree);
-
-
-
-
-
-
-// const projectsItemContentsImgOne = document.querySelector('.projects-item-contents-img-1');
-// // const project1Img1Left = document.querySelector('.project-1-img-1-left');
-// function toggleProjectsImgOneLeft(entries){
-//     entries.forEach(entry =>{
-//         project1Img1Left.classList.toggle('show', entry.isIntersecting);
-//     });
-// }
-// const observerProjectsImgOneLeft = new IntersectionObserver(toggleProjectsImgOneLeft, options);
-// observerProjectsImgOneLeft.observe(projectsItemContentsImgOne);
-
-// // const project1Img1Right = document.querySelector('.project-1-img-1-right');
-// function toggleProjectsImgOneRight(entries){
-//     entries.forEach(entry =>{
-//         project1Img1Right.classList.toggle('show', entry.isIntersecting);
-//     });
-// }
-// const observerProjectsImgOneRight = new IntersectionObserver(toggleProjectsImgOneRight, options);
-// observerProjectsImgOneRight.observe(projectsItemContentsImgOne);
-
-
 
 
 
@@ -177,10 +143,6 @@ const observerAboutMeHead = new IntersectionObserver(toggleAboutMeH1, options);
 observerAboutMeHead.observe(aboutMeHeadH1);
 
 
-// For the About Me H2 Emoji and Skill Sub-header Title
-// optionsOtavie = {
-//     threshold: 0.75,
-// }
 const aboutMeH2Outer = document.querySelector('.about-me-h2__outer');
 function toggleAboutMeH2Outer(entries){
     entries.forEach(entry =>{

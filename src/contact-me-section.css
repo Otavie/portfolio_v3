@@ -180,7 +180,7 @@
 .waving-emoji {
   cursor: pointer;
   display: inline;
-  height: 150px;
+  height: 100px;
   width: auto;
   margin-left: -1px;
   -webkit-transition: -webkit-transform ease-in-out 500ms;

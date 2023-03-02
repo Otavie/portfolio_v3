@@ -16,16 +16,3 @@ gsap.fromTo(".write-up", {duration: 0, scale: 1.65, ease: "power4.easeOut"}, {du
 gsap.fromTo(".landing-img", {duration: 1, opacity: 1, ease: "Power0.easeNone"}, {duration: 4.5, opacity: 0, ease: "Power0.easeNone"}, 3);
 gsap.fromTo(".landing-photo-2", {duration: 1, x: '0%', ease: "Power0.easeNone"}, {duration: 2, x: '-100%', ease: "Power0.easeNone"}, 5);
 
-
-// let scrollTrigger = false;
-// function frontendDev(){
-//     if (window.scrollY >= 100 && !scrollTrigger){
-//         scrollTrigger = true;
-//         gsap.to(".write-up-2", {duration: 1.5, y: '80vh', ease: "Bounce.easeOut"});    
-//     } else if (window.scrollY < 100 && scrollTrigger){
-//         scrollTrigger = false;
-//         gsap.to(".write-up-2", {duration: 1, y: '-80vh', ease: "power2.easeOut"});
-//     }
-// }
-
-// window.addEventListener('scroll', frontendDev);

@@ -105,18 +105,6 @@ project1Img1Right.addEventListener('mouseleave', ()=>{
 });
 
 
-// const project3Img3Left = document.querySelector('.project-3-img-3-left');
-// const project3Img3Right = document.querySelector('.project-3-img-3-right');
-
-// project3Img3Right.addEventListener('mouseenter', ()=>{
-//     project3Img3Left.style.opacity = 0;
-// });
-
-// project3Img3Right.addEventListener('mouseleave', ()=>{
-//     project3Img3Left.style.opacity = 1;
-// });
-
-
 const project3Img3Left = document.querySelector('.project-3-img-3-left');
 const project3Img3Right = document.querySelector('.project-3-img-3-right');
 
