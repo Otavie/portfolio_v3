@@ -456,12 +456,12 @@ header {
 }
 
 header nav {
-  -webkit-transform: translateX(300vw);
-          transform: translateX(300vw);
-  -webkit-transition: -webkit-transform ease-in-out 1000ms;
-  transition: -webkit-transform ease-in-out 1000ms;
-  transition: transform ease-in-out 1000ms;
-  transition: transform ease-in-out 1000ms, -webkit-transform ease-in-out 1000ms;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: -webkit-transform ease-in-out 500ms;
+  transition: -webkit-transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
 }
 
 header nav ul {
@@ -590,10 +590,10 @@ header nav ul li a:active {
       justify-content: space-around;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
-  -webkit-transition: background-color ease-in-out 750ms, -webkit-transform ease-in-out 1000ms;
-  transition: background-color ease-in-out 750ms, -webkit-transform ease-in-out 1000ms;
-  transition: transform ease-in-out 1000ms, background-color ease-in-out 750ms;
-  transition: transform ease-in-out 1000ms, background-color ease-in-out 750ms, -webkit-transform ease-in-out 1000ms;
+  -webkit-transition: background-color ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
+  transition: background-color ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms, background-color ease-in-out 500ms;
+  transition: transform ease-in-out 500ms, background-color ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
   z-index: 200;
 }
 
@@ -633,22 +633,28 @@ header nav ul li a:active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: inherit;
   background: transparent;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   text-align: center;
   z-index: -2;
-  width: 100%;
+  width: 90%;
   color: rgba(238, 238, 228, 0.4);
 }
 
 .write-up-inside-mobile-menu h3 {
+  margin-top: -4rem;
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .write-up-inside-mobile-menu h1 {
   font-size: 5.5rem;
+  margin-top: 2rem;
 }
 
 .mobile-menu {
@@ -659,7 +665,7 @@ header nav ul li a:active {
   height: calc(100vh - 100px);
   height: 100vh;
   width: 90%;
-  width: 100%;
+  width: 90%;
   background-color: var(--primary-bg-color);
   background-color: black;
   -webkit-transition: -webkit-transform 1000ms ease-in-out;
@@ -701,10 +707,10 @@ header nav ul li a:active {
   background-color: black;
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   z-index: 3;
 }
 
@@ -766,7 +772,6 @@ header nav ul li a:active {
   /* ======================= LANDING PAGE ============================== */
   .landing-container {
     height: calc(100vh - 100px);
-    height: calc(100vh - 100px);
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,7 +788,6 @@ header nav ul li a:active {
     z-index: -1;
   }
   .landing {
-    height: calc(100vh - 140px);
     height: calc(100vh - 100px);
     width: 35vw;
     display: -webkit-box;
@@ -826,7 +830,6 @@ header nav ul li a:active {
     height: 100%;
     position: absolute;
     right: 0;
-    background-color: black;
     background-color: red;
     opacity: 1;
     z-index: -1;
@@ -1057,21 +1060,21 @@ header nav ul li a:active {
     margin-right: 50px;
   }
   .mobile-menu-button {
-    -webkit-transform: translateX(calc(100vw + 1000px));
-            transform: translateX(calc(100vw + 1000px));
-    -webkit-transition: -webkit-transform ease-in-out 1000ms;
-    transition: -webkit-transform ease-in-out 1000ms;
-    transition: transform ease-in-out 1000ms;
-    transition: transform ease-in-out 1000ms, -webkit-transform ease-in-out 1000ms;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: -webkit-transform ease-in-out 500ms;
+    transition: -webkit-transform ease-in-out 500ms;
+    transition: transform ease-in-out 500ms;
+    transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
   }
   .mobile-menu,
   .mobile-menu.active {
-    -webkit-transform: translateX(calc(100vw + 1000px));
-            transform: translateX(calc(100vw + 1000px));
-    -webkit-transition: -webkit-transform 1000ms ease-in-out;
-    transition: -webkit-transform 1000ms ease-in-out;
-    transition: transform 1000ms ease-in-out;
-    transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: -webkit-transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   }
   .mobile-menu-button-container {
     z-index: -1;

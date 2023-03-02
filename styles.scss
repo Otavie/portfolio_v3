@@ -377,8 +377,10 @@ header {
 }
 
 header nav{
-    transform: translateX(300vw);
-    transition: transform ease-in-out 1000ms;
+    // transform: translateX(300vw);
+    transform: translateX(100vw);
+    // transition: transform ease-in-out 1000ms;
+    transition: transform ease-in-out 500ms;
 }
   
 header nav ul {
@@ -481,7 +483,8 @@ header nav ul li a:active{
     flex-direction: column;
     justify-content: space-around;
     transform: translateX(0vw);
-    transition: transform ease-in-out 1000ms, background-color ease-in-out 750ms;
+    // transition: transform ease-in-out 1000ms, background-color ease-in-out 750ms;
+    transition: transform ease-in-out 500ms, background-color ease-in-out 500ms;
     z-index: 200;
 
     .bars{
@@ -511,21 +514,24 @@ header nav ul li a:active{
     line-height: 70px;
     align-items: center;
     justify-content: space-evenly;
-    // justify-content: center;
+    justify-content: center;
     height: inherit;
     background: transparent;
     transform: rotate(-90deg);
     text-align: center;
     z-index: -2;
-    width: 100%;
+    width: 90%;
     color: rgba(238, 238, 228, 0.4);
     
     h3{
-        font-size: 3rem;   
+        margin-top: -4rem;
+        font-size: 3rem;
+        margin-bottom: 2rem; 
     }
 
     h1{
-        font-size: 5.5rem;  
+        font-size: 5.5rem;
+        margin-top: 2rem;
     }
 
 }
@@ -538,7 +544,7 @@ header nav ul li a:active{
     height: calc(100vh - 100px);
     height: 100vh;
     width: 90%;
-    width: 100%;
+    width: 90%;
     background-color: var(--primary-bg-color);
     background-color: black;
     transition: transform 1000ms ease-in-out;
@@ -567,7 +573,8 @@ header nav ul li a:active{
     background-color: var(--primary-bg-color);
     background-color: black;
     transform: translateX(0vw);
-    transition: transform 1000ms ease-in-out;
+    // transition: transform 1000ms ease-in-out;
+    transition: transform 500ms ease-in-out;
     z-index: 3;
     
     ul{
@@ -623,7 +630,6 @@ header nav ul li a:active{
 
     .landing-container{
         height: calc(100vh - 100px);
-        height: calc(100vh - 100px);
         width: 100%;
         @include flex-center;
         position: relative;
@@ -633,7 +639,6 @@ header nav ul li a:active{
     }
     
     .landing{
-        height: calc(100vh - 140px);
         height: calc(100vh - 100px);
         width: 35vw;
         @include flex-center;
@@ -668,7 +673,6 @@ header nav ul li a:active{
         height: 100%;
         position: absolute;
         right: 0;
-        background-color: black;
         background-color: red;
         opacity: 1;
         z-index: -1;
@@ -849,14 +853,18 @@ header nav ul li a:active{
     }
 
     .mobile-menu-button{
-        transform: translateX(calc(100vw + 1000px));
-        transition: transform ease-in-out 1000ms;
+        // transform: translateX(calc(100vw + 1000px));
+        transform: translateX(100vw);
+        // transition: transform ease-in-out 1000ms;
+        transition: transform ease-in-out 500ms;
     }
 
     .mobile-menu,
     .mobile-menu.active{
-        transform: translateX(calc(100vw + 1000px));
-        transition: transform 1000ms ease-in-out;
+        // transform: translateX(calc(100vw + 1000px));
+        transform: translateX(100vw);
+        // transition: transform 1000ms ease-in-out;
+        transition: transform 500ms ease-in-out;
     }
 
     .mobile-menu-button-container{
