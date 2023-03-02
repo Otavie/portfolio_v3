@@ -511,6 +511,7 @@ header nav ul li a:active{
     line-height: 70px;
     align-items: center;
     justify-content: space-evenly;
+    // justify-content: center;
     height: inherit;
     background: transparent;
     transform: rotate(-90deg);
@@ -520,11 +521,11 @@ header nav ul li a:active{
     color: rgba(238, 238, 228, 0.4);
     
     h3{
-        font-size: 4rem;   
+        font-size: 3rem;   
     }
 
     h1{
-        font-size: 6.5rem;  
+        font-size: 5.5rem;  
     }
 
 }
@@ -562,7 +563,7 @@ header nav ul li a:active{
     position: fixed;
     height: calc(100vh - 100px);
     height: 100vh;
-    width: 100%;
+    width: 90%;
     background-color: var(--primary-bg-color);
     background-color: black;
     transform: translateX(0vw);
@@ -608,6 +609,9 @@ header nav ul li a:active{
     .container-nav{
         width: 95%;
         width: 90%;
+    }
+    .write-up-inside-mobile-menu{
+        justify-content: space-evenly;
     }
 
     header nav ul li:last-child{
