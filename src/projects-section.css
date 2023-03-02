@@ -34,7 +34,6 @@
   width: 100%;
   position: relative;
   background-color: black;
-  background-color: red;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,9 +257,7 @@
 }
 
 .projects-item-contents-write__inner {
-  margin-top: -4rem;
-  padding: 20px 50px;
-  padding: 100px 2.5%;
+  padding: 1rem 2.5%;
   font-family: var(--ff-body-poppins);
   color: white;
 }
@@ -269,6 +266,7 @@
   font-family: var(--ff-fancy-body-bad-script);
   font-weight: bolder;
   font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .projects-item-contents-write__inner p {
@@ -428,9 +426,7 @@
     font-size: 3rem;
   }
   .projects-item-contents-write__inner {
-    margin-top: -4rem;
-    padding: 20px 50px;
-    padding: 100px 2.5%;
+    padding: 1rem 2.5%;
     font-family: var(--ff-body-poppins);
     color: white;
   }
@@ -534,7 +530,6 @@
     padding: 5% 0 5% 5%;
   }
   .projects-item-contents-img-inner {
-    background-color: red;
     min-height: 70vh;
     width: 100%;
     display: -webkit-box;

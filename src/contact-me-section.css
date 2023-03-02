@@ -19,7 +19,8 @@
   width: 100%;
   color: white;
   position: relative;
-  margin-top: 5rem;
+  margin-top: 0rem;
+  border: 2px solid red;
 }
 
 .contact-me__head {
@@ -400,6 +401,7 @@ footer .copyright {
   }
   .contact-me-section {
     min-height: calc(100vh - 70px);
+    margin-top: 0rem;
   }
   .line-1 {
     left: 60%;
@@ -436,6 +438,9 @@ footer .copyright {
   .contact-me__head-h2 {
     margin-right: -1rem;
   }
+  .contact-me-section {
+    margin-top: 5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -453,5 +458,8 @@ footer .copyright {
   }
   .contact-me__head-h2 {
     margin-right: -1rem;
+  }
+  .contact-me-section {
+    margin-top: 5rem;
   }
 }
