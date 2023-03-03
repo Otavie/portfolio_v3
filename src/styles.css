@@ -1,14 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
 :root {
-  --ff-landing-title-bebas: 'Bebas Neue', cursive;
   --ff-landing-title-oxanium: 'Oxanium', cursive;
   --ff-landing-title-orbitron: 'Orbitron', sans-serif;
-  --ff-body-palandquin: 'Palanquin', sans-serif;
-  --ff-body-poppins: 'Poppins', sans-serif;
-  --ff-body-saira: 'Saira Semi Condensed', sans-serif;
-  --ff-fancy-body-bad-script: 'Bad Script', cursive;
-  --ff-fancy-body-courgette: 'Courgette', cursive;
-  --ff-fancy-body-title: 'Cookie', cursive;
   --primary-color: #eeeee4;
   --primary-bg-color: #091F47;
   --hover-effect-color: rgb(180, 164, 164);

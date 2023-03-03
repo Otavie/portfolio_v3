@@ -26,7 +26,7 @@ function gsapDesktop() {
     gsap.fromTo(".landing-photo", {duration: 2, width:"100%"}, {duration: 1, width:"65%", ease: "power2.easeOut"}, 3)
     
     gsap.fromTo(".write-up", {duration: 1, opacity: 0, scale: 0, ease: "power4.easeOut"}, {duration: 4, opacity: 1, scale: 1.65, ease: "power4.easeOut"}, 1);
-    gsap.to(".write-up", {duration: 1.5, x: '-50vw', ease: "power4.easeOut"}, 3);
+    // gsap.to(".write-up", {duration: 1.5, x: '-70vw', ease: "power4.easeOut"}, 3);
     gsap.to(".write-up", {duration: 1.5, rotation: '-90__cc', x: '-32vw', y: '0vh', ease: "power4.easeOut"}, 3.5);
     
     gsap.fromTo(".write-up", {duration: 0, scale: 1.65, ease: "power4.easeOut"}, {duration: 1, scale: 1, ease: "power4.easeOut"}, 4.5);

@@ -281,7 +281,7 @@
 
 footer {
   background-color: black;
-  height: 50px;
+  height: 100px;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -300,7 +300,11 @@ footer {
 }
 
 footer .copyright {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin-bottom: 3rem;
 }
 
 .footer.day {
