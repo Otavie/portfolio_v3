@@ -861,8 +861,8 @@ header nav ul li a:active{
 
     .mobile-menu,
     .mobile-menu.active{
-        // transform: translateX(calc(100vw + 1000px));
-        transform: translateX(100vw);
+        transform: translateX(calc(100vw + 200px));
+        // transform: translateX(100vw);
         // transition: transform 1000ms ease-in-out;
         transition: transform 500ms ease-in-out;
     }

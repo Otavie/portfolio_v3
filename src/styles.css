@@ -1069,8 +1069,8 @@ header nav ul li a:active {
   }
   .mobile-menu,
   .mobile-menu.active {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    -webkit-transform: translateX(calc(100vw + 200px));
+            transform: translateX(calc(100vw + 200px));
     -webkit-transition: -webkit-transform 500ms ease-in-out;
     transition: -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
