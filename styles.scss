@@ -378,7 +378,8 @@ header {
 
 header nav{
     // transform: translateX(300vw);
-    transform: translateX(100vw);
+    // transform: translateX(100vw);
+    transform: translateX(calc(100vw + 100px));
     // transition: transform ease-in-out 1000ms;
     transition: transform ease-in-out 500ms;
 }
@@ -861,8 +862,8 @@ header nav ul li a:active{
 
     .mobile-menu,
     .mobile-menu.active{
-        transform: translateX(calc(100vw + 200px));
-        // transform: translateX(100vw);
+        // transform: translateX(calc(100vw + 200px));
+        transform: translateX(100vw);
         // transition: transform 1000ms ease-in-out;
         transition: transform 500ms ease-in-out;
     }

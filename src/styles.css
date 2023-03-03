@@ -456,8 +456,8 @@ header {
 }
 
 header nav {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
+  -webkit-transform: translateX(calc(100vw + 100px));
+          transform: translateX(calc(100vw + 100px));
   -webkit-transition: -webkit-transform ease-in-out 500ms;
   transition: -webkit-transform ease-in-out 500ms;
   transition: transform ease-in-out 500ms;
@@ -1069,8 +1069,8 @@ header nav ul li a:active {
   }
   .mobile-menu,
   .mobile-menu.active {
-    -webkit-transform: translateX(calc(100vw + 200px));
-            transform: translateX(calc(100vw + 200px));
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
     -webkit-transition: -webkit-transform 500ms ease-in-out;
     transition: -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
