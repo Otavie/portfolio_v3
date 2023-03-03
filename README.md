@@ -1,6 +1,6 @@
 # PORTFOILIO VERSION 3
 ## FRONTEND DEVELOPER PORTFOLIO WEBSITE
-This is a portfolio website for a frontend developer. It conatins a sample fo 3 projects already done. . It has a simple and beautifully designed interface. Some highlighted features of the project:
+This is a [portfolio](https://otavie.github.io/portfolio_v3/) website for a frontend developer. It conatins a sample fo 3 projects already done. . It has a simple and beautifully designed interface. Some highlighted features of the project:
 
 - toggle for day and night modes
 - boldly designed responsive and reactive (to change) interface
