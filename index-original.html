@@ -13,8 +13,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script> 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="src/styles.css"> -->
-    <link rel="stylesheet" href="src/home-styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <link rel="stylesheet" href="src/projects-section.css">
     <link rel="stylesheet" href="src/about-me-section.css">
     <link rel="stylesheet" href="src/contact-me-section.css">
@@ -22,10 +21,10 @@
 <body>
     <div class="container">
               
-        <header>    <!-- Start of the container div -->
+          <header>
             <div class="day-and-dark-mode">
-            <i class="fa-sharp fa-solid fa-sun fa-2x"></i>
-            <i class="fa-sharp fa-solid fa-moon fa-2x"></i>
+              <i class="fa-sharp fa-solid fa-sun fa-2x"></i>
+              <i class="fa-sharp fa-solid fa-moon fa-2x"></i>
             </div>
             <div class="container-nav">
                 <div class="logo-container">
@@ -33,84 +32,105 @@
                 </div>
                 <nav>
                     <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#about-me">about me</a></li>
-                    <li><a href="#contact-me-section">contact me</a></li>
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="#projects">projects</a></li>
+                      <li><a href="#about-me">about me</a></li>
+                      <li><a href="#contact-me-section">contact me</a></li>
                     </ul>
-                </nav>
-    
-                <nav class="mobile-menu">
+                  </nav>
+      
+                  <nav class="mobile-menu">
                     <div class="write-up-inside-mobile-menu">
-                        <div class="write-up-inside-mobile-menu-h">
-                            <h3>develop with</h3>
-                            <h1>otavie</h1>
-                        </div>                   
+                        <h3>develop with</h3>
+                        <h1>otavie</h1>                    
                     </div>
-                    <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a onclick="showMobileMenu()" href="#projects">projects</a></li>
-                    <li><a onclick="showMobileMenu()" href="#about-me">about me</a></li>
-                    <li><a onclick="showMobileMenu()" href="#contact-me-section">contact me</a></li>
-                    </ul>
-                </nav>
+                      <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a onclick="showMobileMenu()" href="#projects">projects</a></li>
+                        <li><a onclick="showMobileMenu()" href="#about-me">about me</a></li>
+                        <li><a onclick="showMobileMenu()" href="#contact-me-section">contact me</a></li>
+                      </ul>
+                  </nav>
 
-                <div class="mobile-menu-button-container">
-                <button class="mobile-menu-button">
-                    <span class="bars"></span>
-                    <span class="bars"></span>
-                    <span class="bars"></span>
-                </button>
-                </div>
-                
+                  <div class="mobile-menu-button-container">
+                    <button class="mobile-menu-button">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </button>
+                  </div>
+                  
             </div>
 
-        </header>   <!-- End of the container div -->
+        </header>
 
-        
-        <div class="landing-container">     <!-- Start of the landing-container div -->
+          <div class="landing-container">
+            <img class="landing-photo" src="h8.jpg" alt="Landing Photo">
 
-            <!-- <img class="landing-photo" src="h8.jpg" alt="Landing Photo"> -->
-            <img class="landing-photo" src="1.png" alt="Landing Photo">
-            
+            <div class="write-up">
+              <h3>develop with</h3>
+              <h1>otavie</h1>                    
+            </div>
+
+            <div class="write-up-2">
+                <h1>Otavie</h1>
+                <h3>Frontend Dev</h3>
+            </div>
+
             <div class="letter">
-                <span class="d">D</span>
-                <span class="w">W</span>
-                <span class="o">O</span> 
-            </div>  
+              <span class="d">D</span>
+              <span class="w">W</span>
+              <span class="o">O</span> 
+            </div>
 
-            <div class="landing"></div>
+            <div class="landing">
 
-            <div class="landing-project">
-                <div class="top-left">
-                    <h3>hi 👋 there</h3>
-                    <p>I am Otavie 😃, a frontend developer. These are some of my projects <span class="finger-direction">👉</span></p>
+            </div>
+
+            <div class="landing-img-container">
+              <div class="landing-img">
+                  
+              </div>
+
+              <div class="inside-landing-img">
+                <div class="top-left" id="quadrant-1-outside">
+                    <div class="cli-dictionary quadrant" id="quadrant-1-inside">
+                        <h3>cli dictionary</h3>
+                        <p>a web app dictionary for git, vi and emacs commands.</p>
+                    </div>
                 </div>
 
                 <div class="top-right">
-                    <h3>cli dictionary</h3>
-                    <p>an app used for searching frequently used commands shell environments and text editors.</p>
+                    <div class="landing-page-project quadrant">
+                        <h3>portfolio</h3>
+                        <p>a one page portfolio website of a front-end developer.</p>
+                    </div>
                 </div>
 
                 <div class="bottom-left">
-                    <h3>weather app</h3>
-                    <p>a weather app that enables users to search for a location and get real-time weather updates.</p>
+                    <div class="landing-page-project quadrant">
+                        <h3>student database</h3>
+                        <p>a web-based database app for students.</p>
+                    </div>
                 </div>
 
                 <div class="bottom-right">
-                    <h3>portfolio</h3>
-                    <p>a simple portfolio website that with aesthetically pleasing design and responsive layout.</p>
+                    <div class="skill-sets quadrant">
+                        <h3>skill sets</h3>
+                        <div class="skill-sets__img">
+                            <img src="https://cdn.cdnlogo.com/logos/s/90/sass.svg" alt="SCSS">
+                            <img src="https://cdn.cdnlogo.com/logos/j/69/javascript.svg" alt="JavaScript">
+                            <img src="https://cdn.cdnlogo.com/logos/r/63/react.svg" alt="React">
+                            <img src="https://cdn.cdnlogo.com/logos/n/94/nodejs-icon.svg" alt="NodeJS">
+                            <img src="https://cdn.cdnlogo.com/logos/p/3/python.svg" alt="Python">
+                        </div>
+                    </div>
                 </div>
+              </div>
             </div>
-
-            <div class="write-up">      <!-- Start of the write-up div -->
-                <h3>develop with</h3>
-                <h1>otavie</h1>                    
-            </div>      <!-- End of the write-up div -->
             
-        </div>      <!-- End of the landing-container div -->
-        
-
+          </div>
+    
         <div class="container-content">
           
           <section id="projects" class="section projects">
@@ -125,7 +145,7 @@
                     <h2 class="projects-item-head-h2-first sub-heading">cli dictionary</h2>
                 </div>
 
-                <div class="projects-item-contents projects-item-contents-left">
+                <div class="projects-item-contents">
                     <div class="projects-item-contents-img projects-item-contents-img-1">
                         <div class="projects-item-contents-img-inner" id="projects-item-contents-img-inner-1">
                             <img class="project-1-img-1 project-1-img-1-left" src="cli-dictionary-mobile.png" alt="CLI Dictionary" onclick="window.open('https://otavie.github.io/cli-dictionary/', '_blank');">
@@ -136,7 +156,7 @@
                         <div class="projects-item-contents-write__inner">
                             <h3 class="sub-heading">cli dictionary</h3>
                             <p class="paragraphs">
-                                Command Line Interface (CLI) dictionary is a web-based app designed to assist users in searching for the meanings of frequently used commands and terms in shell environments and text editors. It features a comprehensive list of commands utilized in vi, emacs, and git. The coding and designing of the app were completed in less than 24 hours. Click on any of the images showcasing the project to use the app.
+                                The project is a web app called Command Line Interface (CLI) dictionary, designed to assist users in searching for the meanings of frequently used commands and terms in shell environments and text editors. It features a comprehensive list of commands utilized in vi, emacs, and git. The coding and designing of the app were completed in less than 24 hours, and images showcasing the project can be clicked to view the project.
                             </p>
                             <p class="tools-used">HTML <span class="pipes">|</span> CSS <span class="pipes">|</span> JS <span class="pipes">|</span> JSON</p>
                         </div>    
@@ -147,22 +167,21 @@
             
               <div class="projects-item projects-item-2">
                   <div class="projects-item-head" id="projects-item-head-2">
-                      <h2 class="projects-item-head-h2-right sub-heading">weathernow</h2>
+                      <h2 class="projects-item-head-h2-right sub-heading">student cms</h2>
                   </div>
 
-                  <div class="projects-item-contents projects-item-contents-right">
+                  <div class="projects-item-contents">
                       <div class="projects-item-contents-img projects-item-contents-img-right">
                           <div class="projects-item-contents-img-inner projects-item-contents-img-inner-right" id="projects-item-contents-img-inner-2">
-                              <img class="project-2-img-2 project-2-img-2-left" src="weather-desktop.jpg" alt="Weather App Desktop" onclick="window.open('https://otavie.github.io/weather-app/', '_blank');">
-                              <img class="project-2-img-2 project-2-img-2-right" src="weather-mobile.png" alt="Weather App Mobile" onclick="window.open('https://otavie.github.io/weather-app/', '_blank');">
+                              <img class="project-2-img-2 project-2-img-left" src="h8.jpg" alt="">
                           </div>
                       </div>
                       
                       <div class="projects-item-contents-write projects-item-contents-write-right" id="projects-item-contents-write-2">
                         <div class="projects-item-contents-write__inner">
-                            <h3 class="sub-heading">weathernow</h3>
+                            <h3 class="sub-heading">student cms</h3>
                             <p class="paragraphs">
-                                WeatherNow is a weather app that enables users to search for a location and get real-time weather updates. The app provides temperature readings in both Fahrenheit and Celsius, as well as details on weather condition, humidity, etc. It is an essential tool for anyone who needs to stay informed about the weather. Whether you're planning a trip, or simply want to stay on top of the latest weather conditions, WeatherNow has you covered.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iure explicabo, quia illo, similique iusto incidunt officia facere aliquid omnis sequi fugiat nostrum possimus veniam eum eaque excepturi ab quas?
                             </p>
                             <p class="tools-used">HTML <span class="pipes">|</span> CSS <span class="pipes">|</span> JS <span class="pipes">|</span> JSON</p>
                         </div>    
@@ -176,7 +195,7 @@
                       <h2 class="projects-item-head-h2-third sub-heading">portfolio</h2>
                   </div>
 
-                  <div class="projects-item-contents projects-item-contents-left">
+                  <div class="projects-item-contents">
                       <div class="projects-item-contents-img projects-item-contents-img-3">
                           <div class="projects-item-contents-img-inner" id="projects-item-contents-img-inner-3">
                               <img class="project-3-img-3 project-3-img-3-left" src="portfolio-mobile.png" alt="Portfolio Website" onclick="window.open('https://otavie.github.io/portfolio_v1/', '_blank');">

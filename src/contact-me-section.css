@@ -12,6 +12,7 @@
   --primary-color: #eeeee4;
   --primary-bg-color: #091F47;
   --hover-effect-color: rgb(180, 164, 164);
+  --gray-color: gray;
 }
 
 .contact-me-section {
@@ -19,8 +20,6 @@
   width: 100%;
   color: white;
   position: relative;
-  border-left: 5px solid gray;
-  border-right: 5px solid gray;
 }
 
 .contact-me__head {
@@ -239,6 +238,7 @@
 }
 
 .view-resume {
+  font-family: var(--ff-landing-title-oxanium);
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,7 +253,7 @@
 
 .view-resume a {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 7.5px;
   border: 1px solid var(--hover-effect-color);
   border: 1px solid var(--primary-color);
@@ -262,6 +262,7 @@
   -webkit-transition: border 750ms ease-in-out, color 750ms ease-in-out;
   transition: border 750ms ease-in-out, color 750ms ease-in-out;
   font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .send-mail.day {
@@ -280,10 +281,11 @@
 }
 
 footer {
+  border-top: 2px solid var(--gray-color);
   background-color: black;
   height: 100px;
-  color: #fff;
   padding: 20px;
+  width: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,11 +306,14 @@ footer .copyright {
 }
 
 footer p {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 
 .footer.day {
-  background-color: black;
+  background-color: white;
+  border-top: 2px solid black;
+  color: black;
+  text-shadow: 0.5px 0.5px 0px var(--gray-color);
 }
 
 .finger-down {
@@ -366,10 +371,17 @@ footer p {
   font-weight: bolder;
 }
 
-@media only screen and (min-width: 600px) {
-  header {
-    background-color: red;
+@media only screen and (max-width: 449px) {
+  .contact-me-section {
+    border-left: 3px solid gray;
+    border-right: 3px solid gray;
   }
+  .lines {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
   .view-resume a {
     padding: 10px 35px;
     border-radius: 7.5px;
@@ -414,9 +426,6 @@ footer p {
 }
 
 @media only screen and (min-width: 900px) {
-  header {
-    background-color: green;
-  }
   .contact-me__content {
     width: 60%;
   }
@@ -446,9 +455,6 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
-  header {
-    background-color: purple;
-  }
   .contact-me__content {
     width: 100%;
   }

@@ -1,39 +1,64 @@
-# PORTFOILIO VERSION 3
-## FRONTEND DEVELOPER PORTFOLIO WEBSITE
-This is a [portfolio](https://otavie.github.io/portfolio_v3/) website for a frontend developer. It conatins a sample fo 3 projects already done. . It has a simple and beautifully designed interface. Some highlighted features of the project:
+# OTAVIE'S PORTFOLIO WEBSITE
 
-- toggle for day and night modes
-- boldly designed responsive and reactive (to change) interface
-- responsive for both mobile, tab and desktop usage
+Welcome to my portfolio website! I am a frontend developer with experience in building responsive and user-friendly web applications. This website serves as a showcase of my skills, projects, and accomplishments.
 
-### Challenges
-The following are some challenges encountered:
-- I spent more time designing a logo, when I should have gone for something simple
-- xxxxxx
+## Technologies Used
 
-### Recommendation for Improvement:
-- Get a designer to perform designer's tasks and spend time doing your development task
-- Avoiding too much of JS animation would have saved a lot of time
+This website was built using the following technologies:
 
+- HTML5, SCSS/CSS3, JavaScript
+- GreenSock Animation Platform (GSAP) Library
 
+## Features
 
+- Responsive design optimized for desktop and mobile devices
+- Well animated landing page with JavaScript and GSAP library
+- Portfolio section showcasing my latest projects with live links
+- About section detailing my skills, background, education, and experience
+- Contact page for potential clients and employers to reach out to me
 
+## Usage
 
+Click [Otavie's Portfolio](https://otavie.github.io/portfolio_v3/) to visit my website. From there, you can explore my portfolio, learn more about my skills and experience, and connect with me via the contact page.
 
+## Portfolio Website
 
-========== xxxxxxxxxx ========== xxxxxxxxxx ========== xxxxxxxxxx ========== xxxxxxxxxx
+The portfolio website consists of the following sections:
 
-### Author:
-Otavie Okuoyo
+### Landing Page
 
-### Tools Used:
-HTML | CSS | and JavaScript | GSAP
+On the landing page, visitors are greeted by a visually appealing display of three different projects which is preceded by skilfully crafted animations to grab attention of visitors. These animations also add a dynamic and engaging element to the user experience, providing a seamless and immersive introduction to the showcased projects.
 
-### Estimated Project Duration:
-2  Months (February 4, 2023 to April 4, 2023)
+### Projects
 
-### Start Date:
-February 4, 2023
+This section of my website is dedicated to my projects and serves as a veritable repository of my professional work, offering visitors a comprehensive overview of my skills, expertise, and creative acumen. It features a thoughtfully curated selection of some of my latest projects, each of which has been meticulously crafted to showcase my proficiency in design and development.
 
-### End Date:
-xxxxxxxxxxxxxxxxxxxxxxx
+To provide visitors with a more immersive and engaging experience, the section incorporates live links (click on the image) to each project, allowing them to delve deeper into each project and gain a more nuanced understanding of the techniques, tools, and methodologies that underpin my work.
+
+### About
+
+My about section provides background information about me, including my education. You can learn more about my journey into frontend development and my passion for creating user-friendly web applications.
+
+#### Skills
+
+My skills page provides an overview of my expertise in frontend development, including languages, frameworks, and tools I use on a regular basis. I have experience with HTML, CSS, JavaScript, jQuery, Bootstrap, and more.
+
+### Contact
+
+The contact section provides visitors with multiple ways to get in touch with me and learn more about my professional background. It features links to your Github, LinkedIn, and Twitter profiles, allowing visitors to easily connect with me on these platforms and follow my updates.
+
+Additionally, the section includes a "View Resume" button, which directs visitors to a page where they can view my professional experience and qualifications in more detail.
+
+To further facilitate communication, there is also a “send email” button that opens the visitor's default email app, enabling them to quickly send me an email. This allows potential clients, collaborators, or employers to easily get in touch with me, making it easy for them to reach out and start a conversation. Overall, the contact section of my website provides visitors with a convenient and straightforward way to connect with me and learn more about my work.
+
+## Credits
+
+This website was developed by [Otavie Okuoyo](https://github.com/Otavie) to fit my personal style and needs. The skill logos were gotten from from [CDN Logo](https://cdnlogo.com/). Static emojis were gotten from [Emojipedia](https://emojipedia.org/), while the animated waving hand emoji was gotten from [GIFEFR](https://gifer.com/en/) and the animated emojis - Smiley Wow and Boy Waving are from [Pixabay](https://pixabay.com/)
+
+## Duration of Project:
+
+2 Months
+
+## Date
+
+Saturday February 4, 2023 to Tuesday, April 4, 2023

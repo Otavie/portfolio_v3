@@ -72,7 +72,10 @@
     h1{
         font-family: var(--ff-landing-title-orbitron);
         font-size: 4rem;
-        color: white;
+        letter-spacing: -0.8rem;
+        text-indent: -0.8rem;
+        text-shadow: 1px 2px 1px red, 1px 2px 5px white;
+        color: black;
     }
 }
 
@@ -152,6 +155,22 @@
     flex-direction: column;
 }
 
+.projects-item-contents-left {
+    border-left: 5px solid gray;
+}
+
+.projects-item-contents-right{
+    border-right: 5px solid gray;
+}
+
+.projects-item-contents-left.day {
+    border-left: 5px solid black;
+}
+
+.projects-item-contents-right.day{
+    border-right: 5px solid black;
+}
+
 .projects-item-contents-img{
     width: 100%;
     overflow: hidden;
@@ -174,14 +193,6 @@
     }
 }
 
-// .projects-item-contents-img img:hover {
-//     transform: scale(0.9);
-// }
-
-// .projects-item-contents-img-1 img:nth-child(1):hover{
-//     transform: scale(1.1);
-// }
-
 .projects-item-contents-img-right{
     order: -1;
     margin-right: 0;
@@ -194,7 +205,15 @@
 
 .projects-item-contents-write.day{
     background-color: white;
+}
+
+.paragraphs.day{
     color: black;
+    font-weight: 400;
+}
+
+.paragraphs{
+    color: white;
 }
 
 .projects-item-contents-write-1 h3,
@@ -272,23 +291,13 @@
     }
 }
 
-.project-2-img-2{
-    transform: translateX(50%);
-    transition: transform 1100ms ease-in-out, opacity 1100ms ease-in-out;
-}
-
-// .project-3-img-3{
-//     transform: translateX(-100%);
-//     opacity: 0;
-//     transition: transform 1100ms ease-in-out, opacity 1100ms ease-in-out;
-// }
-
 .project-1-img-1-left.show,
-.project-2-img-2.show,
+.project-2-img-2-right.show,
 .project-3-img-3-left.show{
     opacity: 1;
     transform: scale(1) translateX(0%);
 }
+
 
 .project-1-img-1-left,
 .project-3-img-3-left{
@@ -297,6 +306,16 @@
     transition: transform 1100ms ease-in-out, opacity 750ms ease-in-out;
     cursor: pointer;
     left: 5%;
+    z-index: 1;
+    height: 100%;
+}
+
+.project-2-img-2-right{
+    transform: scale(1) translateX(200%);
+    opacity: 0;
+    transition: transform 1100ms ease-in-out, opacity 750ms ease-in-out;
+    cursor: pointer;
+    right: 5%;
     z-index: 1;
     height: 100%;
 }
@@ -310,6 +329,10 @@
     transform: scale(1.1);
 }
 
+.projects-item-contents-img-right img:nth-child(2):hover{
+    transform: scale(1.1);
+}
+
 .project-1-img-1-right,
 .project-3-img-3-right{
     cursor: pointer;
@@ -319,12 +342,20 @@
     transition: transform 1100ms ease-in-out, opacity 750ms ease-in-out;
 }
 
+.project-2-img-2-left{
+    cursor: pointer;
+    height: 80%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1100ms ease-in-out, opacity 750ms ease-in-out;
+}
+
 .project-1-img-1-right.show,
+.project-2-img-2-left.show,
 .project-3-img-3-right.show{
     transform: rotate(5deg) scale(0.55) skew(-10deg) translateX(0%);
     opacity: 1;
 }
-
 
 .tools-used{
     color: gray;
@@ -350,9 +381,10 @@
 
 
 @media only screen and (min-width: 600px){
-    header{
-        background-color: red;
-    }
+    // header{
+    //     background-color: red;
+    // }
+
     .container-content{
         padding: 0 10%;
         margin: 0 auto;
@@ -369,7 +401,10 @@
         h1{
             font-family: var(--ff-landing-title-orbitron);
             font-size: 6rem;
-            color: white;
+            letter-spacing: -0.8rem;
+            text-indent: -0.8rem;
+            text-shadow: 1px 2px 1px red, 1px 2px 5px white;
+            color: black;
         }
     }
 
@@ -380,22 +415,7 @@
     }
 
     .projects-item-contents-write__inner{
-        padding: 1rem 2.5%;
-        font-family: var(--ff-body-poppins);
-        color: white;
-        h3{
-            font-size: 2rem;
-        }
-        p{
-            font-weight: 200;
-            font-size: 1.1rem;
-            line-height: 1.8rem;
-        }
-    }
-
-    .projects-item-contents-write__inner{
-        padding: 20px 50px;
-        padding: 100px 2.5%;
+        padding: 2rem 2.5%;
         font-family: var(--ff-body-poppins);
         color: white;
         p{
@@ -411,9 +431,9 @@
 }
 
 @media only screen and (min-width: 900px){
-    header{
-        background-color: green;
-    }
+    // header{
+    //     background-color: green;
+    // }
 
     .projects-item-contents{
         flex-direction: row;
@@ -424,12 +444,12 @@
         padding: 0;
         width: 100%;
         margin: 0 auto;
+        padding: 0 2rem;
     }
 
     .projects-item-contents-img{
         width: 55%;
         min-height: 50vh;
-        margin-right: 5%;
     }
 
     .projects-item-contents-write{
@@ -439,7 +459,6 @@
 
     .projects-item-contents-img-right{
         order: 2;
-        margin-left: 5%;
     }
 
     .projects-item-head-h2-right{
@@ -465,12 +484,12 @@
         padding-right: 75px;
     }
     .projects-item-contents-img-inner-right{
-        padding: 5% 0 5% 5%;
+        padding: 5% 2.5% 5% 2.5%;
     
     }
 
     .projects-item-contents-img-inner{
-        min-height: 70vh;
+        min-height: 60vh;
         width: 100%;
         @include flex-center;
         img{
@@ -491,7 +510,11 @@
         h1{
             font-family: var(--ff-landing-title-orbitron);
             font-size: 7.5rem;
-            color: white;
+            letter-spacing: -0.8rem;
+            text-indent: -0.8rem;
+            text-shadow: 1px 2px 1px red, 1px 2px 5px white;
+            color: black;
+    
         }
     }
 
@@ -504,8 +527,7 @@
 
     .projects-item-contents-write__inner{
         margin-top: 0rem;
-        padding: 20px 50px;
-        padding: 100px 2.5%;
+        padding: 2rem 2.5%;
         font-family: var(--ff-body-poppins);
         color: white;
         h3{
@@ -519,9 +541,26 @@
     } 
 }
 
+@media only screen and (min-width: 950px){
+    .container-content{
+        padding: 0 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .container-content{
+        padding: 0 3.5rem;
+    }
+}
+
+
 @media only screen and (min-width: 1200px){
-    header{
-        background-color: purple;
+    // header{
+    //     background-color: purple;
+    // }
+
+    .container-content{
+        padding: 0 5rem;
     }
 
     .projects-item-contents-img img:hover {
@@ -529,6 +568,11 @@
     }
 
     .project-1-img-1-right.show{
+        transform: rotate(5deg) scale(0.75) skew(-10deg) translateX(0%);
+        opacity: 1;
+    }
+
+    .project-2-img-2-left.show{
         transform: rotate(5deg) scale(0.75) skew(-10deg) translateX(0%);
         opacity: 1;
     }

@@ -1,25 +1,45 @@
-let scrollTrigger = false;
-function frontendDev(){
-    if (window.scrollY >= 100 && !scrollTrigger){
-        scrollTrigger = true;
-        // gsap.to(".write-up-2", {duration: 1.5, y: '80vh', ease: "Bounce.easeOut"});    
-        gsap.fromTo(".write-up-2", {opacity: 0, y: '-80vh'}, {duration: 1.5, opacity: 1, y: '80vh', ease: "Bounce.easeOut"});    
-    } else if (window.scrollY < 100 && scrollTrigger){
-        scrollTrigger = false;
-        gsap.fromTo(".write-up-2", {opacity: 1, y: '80vh'}, {duration: 1, opacity: 0, y: '-80vh', ease: "power2.easeOut"});
-        // gsap.to(".write-up-2", {duration: 1, y: '-80vh', ease: "power2.easeOut"});
-    }
-}
-
-window.addEventListener('scroll', frontendDev);
-
-
 gsap.to(".d", {duration: 2, x: '-40vw', ease: "power4.easeOut"}, 1);
 gsap.to(".d", {duration: 1.5, opacity:0, ease: "Power0.easeNone"}, 2.5);
 gsap.to(".o", {duration: 2, x: '40vw', ease: "power4.easeOut"}, 1);
 gsap.to(".o", {duration: 1.5, opacity:0, ease: "Power0.easeNone"}, 2.5);
 gsap.to(".w", {duration: 2.5, y: '30vh', ease: "power4.easeOut"}, 1);
 gsap.to(".w", {duration: 1.5, opacity:0, ease: "Power0.easeNone"}, 2.5);
+
+
+gsap.fromTo(".top-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 4);
+
+gsap.fromTo(".top-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut", delay: 7});
+gsap.to(".top-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 11);
+setTimeout(function() {
+  document.querySelector('.top-right').addEventListener('click', function() {
+    document.querySelector('.projects-item-1').scrollIntoView();
+  });
+}, 6000);
+
+gsap.fromTo(".bottom-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 9);
+gsap.to(".bottom-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 13);
+setTimeout(function() {
+  document.querySelector('.bottom-right').addEventListener('click', function() {
+    document.querySelector('.projects-item-2').scrollIntoView();
+  });
+}, 6000);
+
+gsap.fromTo(".bottom-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 11)
+gsap.to(".bottom-left", {cursor: 'pointer', ease: "Power0.easeNone"}, 16);
+setTimeout(function() {
+  document.querySelector('.bottom-left').addEventListener('click', function() {
+    document.querySelector('.projects-item-3').scrollIntoView();
+  });
+}, 6000);
+
+
+
+gsap.fromTo(".finger-direction", {opacity: 0}, {duration: 1, opacity: 1, ease: "power2.easeOut"}, 8.5)
+gsap.to(".finger-direction", {duration: 1.5, transform: 'rotate(45deg)', ease: "power2.easeOut"}, 11);
+gsap.to(".finger-direction", {duration: 1.5, transform: 'rotate(90deg)', ease: "power2.easeOut"}, 13.5);
+gsap.to(".finger-direction", {duration: 1.5, opacity: 0, ease: "power2.easeOut"}, 16);
+
+
 
 function gsapDesktop() {
     gsap.fromTo(".landing", {duration: 2, x: '-100%', ease: "power2.easeOut"}, {duration: 1, x: '0%', ease: "power2.easeOut"}, 3)

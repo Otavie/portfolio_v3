@@ -4,7 +4,7 @@ const faSun = document.querySelector('.fa-sun');
 const faMoon = document.querySelector('.fa-moon');
 
 function showMobileMenu(){
-    mobileMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('active')
 }
 
 function toggleMoon(){
@@ -26,12 +26,6 @@ fingerDown.addEventListener('animationend', () =>{
 
 const dayAndDarkMode = document.querySelector('.day-and-dark-mode');
 const containerContent = document.querySelector('.container-content');
-const header = document.querySelector('header');
-const topLeft = document.querySelector('.top-left');
-const topRight = document.querySelector('.top-right');
-const bottomRight = document.querySelector('.bottom-right');
-const bottomLeft = document.querySelector('.bottom-left');
-const landing = document.querySelector('.landing');
 const projectsItemContentsWriteAll = document.querySelectorAll('.projects-item-contents-write');
 const footer = document.querySelector('.footer');
 const sendMail = document.querySelector('.send-mail');
@@ -46,8 +40,6 @@ const subHeadings = document.querySelectorAll('.sub-heading');
 const toolsUsed = document.querySelectorAll('.tools-used');
 const pipes = document.querySelectorAll('.pipes');
 const skillSetsImgs = document.querySelectorAll('.skill-sets__img img');
-const projectsItemContentsLefts = document.querySelectorAll('.projects-item-contents-left');
-const projectsItemContentsRight = document.querySelector('.projects-item-contents-right');
 function toggleDayAndNight(){
     containerContent.classList.toggle('day');
     projectsHead.classList.toggle('day');
@@ -56,14 +48,6 @@ function toggleDayAndNight(){
     sendMail.classList.toggle('day');
     viewResume.classList.toggle('day');
     smileEmoji.classList.toggle('day');
-    topLeft.classList.toggle('day');
-    topRight.classList.toggle('day');
-    bottomRight.classList.toggle('day');
-    bottomLeft.classList.toggle('day');
-    landing.classList.toggle('day');
-    header.classList.toggle('day');
-    mobileMenu.classList.toggle('day');
-    faSun.classList.toggle('day');
 
     projectsItemContentsWriteAll.forEach(projectsItemContentsWrite =>{
         projectsItemContentsWrite.classList.toggle('day');
@@ -104,48 +88,6 @@ function toggleDayAndNight(){
     skillSetsImgs.forEach(skillSetsImg =>{
         skillSetsImg.classList.toggle('day');
     });
-
-    projectsItemContentsLefts.forEach(projectsItemContentsLeft =>{
-        projectsItemContentsLeft.classList.toggle('day');
-    });
-
-    projectsItemContentsRight.classList.toggle('day');
 }
 
 dayAndDarkMode.addEventListener('click', toggleDayAndNight);
-
-
-const project1Img1Left = document.querySelector('.project-1-img-1-left');
-const project1Img1Right = document.querySelector('.project-1-img-1-right');
-
-project1Img1Right.addEventListener('mouseenter', ()=>{
-    project1Img1Left.style.opacity = 0;
-});
-
-project1Img1Right.addEventListener('mouseleave', ()=>{
-    project1Img1Left.style.opacity = 1;
-});
-
-
-const project3Img3Left = document.querySelector('.project-3-img-3-left');
-const project3Img3Right = document.querySelector('.project-3-img-3-right');
-
-project3Img3Right.addEventListener('mouseenter', ()=>{
-    project3Img3Left.style.opacity = 0;
-});
-
-project3Img3Right.addEventListener('mouseleave', ()=>{
-    project3Img3Left.style.opacity = 1;
-});
-
-
-const project2Img2Right = document.querySelector('.project-2-img-2-right');
-const project2Img2Left = document.querySelector('.project-2-img-2-left');
-
-project2Img2Left.addEventListener('mouseenter', ()=>{
-    project2Img2Right.style.opacity = 0;
-});
-
-project2Img2Left.addEventListener('mouseleave', ()=>{
-    project2Img2Right.style.opacity = 1;
-});

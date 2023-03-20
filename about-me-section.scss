@@ -66,13 +66,17 @@
         font-family: var(--ff-landing-title-orbitron);
         font-size: 4rem;
         color: white;
+        letter-spacing: -0.8rem;
+        text-indent: -0.8rem;
+        text-shadow: 1px 2px 1px red, 1px 2px 5px white;
+        color: black;
     }
 }
 
 .about-me__head.day{
     background-color: white;
     h1{
-        color: var(--primary-bg-color);
+        color: black;
     }
 }
 
@@ -187,6 +191,7 @@
 .about-me__content.day{
     h2{
         color: var(--primary-bg-color);
+        color: black;
     }
 }
 
@@ -239,9 +244,7 @@
 .skill-sets__img img.day{
     box-shadow: 0px 0px 5px black;
     background-color: #fff;
-    // border-left: 1px solid var(--primary-bg-color);
     border-left: 1px solid black;
-    // border-bottom: 1px solid var(--primary-bg-color);
     border-bottom: 1px solid black;
 }
 
@@ -275,9 +278,9 @@
 
 
 @media only screen and (min-width: 600px){
-    header{
-        background-color: red;
-    }
+    // header{
+    //     background-color: red;
+    // }
 
     .about-me__content{
         padding: 0px;
@@ -325,9 +328,9 @@
 }
 
 @media only screen and (min-width: 900px){
-    header{
-        background-color: green;
-    }
+    // header{
+    //     background-color: green;
+    // }
 
     .contact-me__head h2{
         font-size: 5rem
@@ -398,9 +401,9 @@
 }
 
 @media only screen and (min-width: 1200px){
-    header{
-        background-color: purple;
-    }
+    // header{
+    //     background-color: purple;
+    // }
 
     .about-me__head{
         height: 40vh;

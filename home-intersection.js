@@ -70,40 +70,19 @@ function toggleProjectsItemH1Right(entries){
 const observerProjectsItemHeadTwo = new IntersectionObserver(toggleProjectsItemH1Right, options);
 observerProjectsItemHeadTwo.observe(projectsItemHeadTwo);
 
-// For the Second project Text and Image
+// For the Second project Text
 const projectsItemContentsWriteTwo = document.getElementById('projects-item-contents-write-2');
 const projectsItemContentsWriteRightH2 = document.querySelector('.projects-item-contents-write-right');
 const projectsItemContentsWriteTwoP = document.querySelector('.projects-item-contents-write-2');
-// const projectTwoImgTwo = document.querySelector('.project-2-img-2');
+const projectTwoImgTwo = document.querySelector('.project-2-img-2');
 function toggleProjectsWriteTwo(entries){
     entries.forEach(entry =>{
         projectsItemContentsWriteRightH2.classList.toggle('show', entry.isIntersecting);
-        projectsItemContentsWriteTwoP.classList.toggle('show', entry.isIntersecting);
-
+        projectTwoImgTwo.classList.toggle('show', entry.isIntersecting);
     });
 }
 const observerProjectsItemContentsWriteTwo = new IntersectionObserver(toggleProjectsWriteTwo, options);
 observerProjectsItemContentsWriteTwo.observe(projectsItemContentsWriteTwo);
-
-
-const projectsItemContentsImgRight = document.querySelector('.projects-item-contents-img-right');
-function toggleProjectsImgTwoRight(entries){
-    entries.forEach(entry =>{
-        project2Img2Right.classList.toggle('show', entry.isIntersecting);
-    });
-}
-const observerProjectsImgTwoRight = new IntersectionObserver(toggleProjectsImgTwoRight, options);
-observerProjectsImgTwoRight.observe(projectsItemContentsImgRight);
-
-function toggleProjectsImgTwoLeft(entries){
-    entries.forEach(entry =>{
-        project2Img2Left.classList.toggle('show', entry.isIntersecting);
-    });
-}
-const observerProjectsImgTwoLeft = new IntersectionObserver(toggleProjectsImgTwoLeft, options);
-observerProjectsImgTwoLeft.observe(projectsItemContentsImgRight);
-
-
 
 // =========================================================================================
 // For the Third project Title
@@ -148,7 +127,7 @@ function toggleProjectsImgThreeRight(entries){
 const observerProjectsImgThreeRight = new IntersectionObserver(toggleProjectsImgThreeRight, options);
 observerProjectsImgThreeRight.observe(projectsItemContentsImgThree);
 
-// projects-item-contents-img-right
+
 
 
 // For the About Me Head Title
