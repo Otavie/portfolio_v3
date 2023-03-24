@@ -58,6 +58,7 @@ html{
     box-sizing: border-box;
 }
 
+
 body {
     overflow-x: hidden;
     background-color: black;
@@ -72,15 +73,31 @@ header{
 }
 
 header.day{
+    background-color: #9e3636;
     background-color: #CCC;
+
+    ul li a{
+        color: black;
+        border: 1.5px solid black;
+    }
+
+    ul li a:hover,
+    ul li a:active,
+    ul li a:focus{
+        color: #9e3636;
+        color: #574f4f;
+        // border: 1.5px solid #9e3636;
+        border: 1.5px solid #574f4f;
+        // border: 1.5px solid #fff;
+    }
 }
 
 .landing-container{
     height: calc(100vh - 100px);
     width: 100%;
     position: relative;
-    z-index: -1;
     z-index: 1;
+    order: 1;
 }
 
 .landing{
@@ -130,7 +147,7 @@ header.day{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80px; 
+  width: 50px; 
   height: 1.5px; 
   background-color: gray; 
   z-index: 3;
@@ -217,13 +234,6 @@ header.day{
     color: black;
 }
 
-// .top-left.day:hover,
-// .top-right.day:hover,
-// .bottom-left.day:hover,
-// .bottom-right.day:hover{
-//     transform: scale(1.015);    
-// }
-
 .landing-photo{
     height: 100%;
     width: 100%;
@@ -250,6 +260,15 @@ header {
     font-size: 0.8rem;
     font-weight: 600;
     position: relative;
+    width: 100%;
+}
+
+header.fixed{
+    position: fixed;
+}
+
+.landing-container.fixed{
+    margin-top: 100px;
 }
 
 .container-nav{
@@ -335,26 +354,6 @@ header {
     position: static;
 }
 
-// .write-up-2{
-//     position: absolute;
-//     text-align: center;
-//     color: gray;
-//     color: rgb(179, 176, 176);
-//     font-family: var(--ff-landing-title-orbitron);
-//     line-height: 50px;
-//     z-index: 2;
-//     right: 20px;
-//     top: -20%;
-
-//     h1{
-//         font-size: 5.5rem;
-//     }
-
-//     h3{
-//         font-size: 2.5rem;
-//     }
-// }
-
 header nav{
     transform: translateX(calc(100vw + 100px));
     transition: transform ease-in-out 500ms;
@@ -384,6 +383,10 @@ header nav ul li a{
     border-radius: 7.5px;
     transition: color 500ms ease-in-out, border-color 500ms ease-in-out;
     color: var(--primary-color);
+}
+
+header nav ul li a{
+    color: white;
 }
 
 header nav ul li a:hover,
@@ -536,8 +539,10 @@ header nav ul li a:active{
         justify-content: space-evenly;
 
         li a{
-            padding: 4vh 10vw;
+            padding: 2vh 10vw;
+            padding-bottom: calc(2vh + 2px);
             font-size: 1.2rem;
+            color: #eeeee4;
         }
     }
 }
@@ -561,7 +566,8 @@ header nav ul li a:active{
         justify-content: space-evenly;
 
         li a{
-            padding: 4vh 10vw;
+            padding: 2vh 10vw;
+            padding-bottom: calc(2vh + 2px);
         }
     }
 }
@@ -582,6 +588,7 @@ header nav ul li a:active{
         color: black;
         border-color: black;
     }
+
 }
 
 
@@ -620,7 +627,10 @@ header nav ul li a:active{
 
 
 
-
+// footer,
+// .footer{
+//     z-index: 1;
+// }
 
 
 
@@ -652,7 +662,6 @@ header nav ul li a:active{
         // @include flex-center;
         position: relative;
         background-color: black;
-        z-index: -1;
         z-index: 1;
     }
     
@@ -743,7 +752,6 @@ header nav ul li a:active{
         height: 50px;
         height: auto;
         align-content: flex-end;
-        // border: 2px solid red;
         min-width: 170px;
     }
 

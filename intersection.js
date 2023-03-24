@@ -29,6 +29,7 @@ observerProjectsItemHeadOne.observe(projectsItemHeadOne)
 const projectsItemContentsWriteOne = document.getElementById('projects-item-contents-write-1');
 const projectsItemContentsWriteOneH3 = document.querySelector('.projects-item-contents-write-1');
 const projectsItemContentsWriteOneP = document.querySelector('.projects-item-contents-write-1');
+const project1Img1Right = document.querySelector('.project-1-img-1-right');
 function toggleProjectsWriteOne(entries){
     entries.forEach(entry =>{
         projectsItemContentsWriteOneH3.classList.toggle('show', entry.isIntersecting);
@@ -73,13 +74,12 @@ observerProjectsItemHeadTwo.observe(projectsItemHeadTwo);
 // For the Second project Text and Image
 const projectsItemContentsWriteTwo = document.getElementById('projects-item-contents-write-2');
 const projectsItemContentsWriteRightH2 = document.querySelector('.projects-item-contents-write-right');
-const projectsItemContentsWriteTwoP = document.querySelector('.projects-item-contents-write-2');
+// const projectsItemContentsWriteTwoP = document.querySelector('.projects-item-contents-write-2');
 // const projectTwoImgTwo = document.querySelector('.project-2-img-2');
 function toggleProjectsWriteTwo(entries){
     entries.forEach(entry =>{
         projectsItemContentsWriteRightH2.classList.toggle('show', entry.isIntersecting);
-        projectsItemContentsWriteTwoP.classList.toggle('show', entry.isIntersecting);
-
+        // projectsItemContentsWriteTwoP.classList.toggle('show', entry.isIntersecting);
     });
 }
 const observerProjectsItemContentsWriteTwo = new IntersectionObserver(toggleProjectsWriteTwo, options);
@@ -121,6 +121,7 @@ observerProjectsItemHeadThree.observe(projectsItemHeadThree);
 const projectsItemContentsWriteThree = document.getElementById('projects-item-contents-write-3');
 const projectsItemContentsWriteThreeH2 = document.querySelector('.projects-item-contents-write-3');
 const projectsItemContentsWriteThreeP = document.querySelector('.projects-item-contents-write-3');
+const project3Img3Right = document.querySelector('.project-3-img-3-right');
 function toggleProjectsWriteThree(entries){
     entries.forEach(entry =>{
         projectsItemContentsWriteThreeH2.classList.toggle('show', entry.isIntersecting);

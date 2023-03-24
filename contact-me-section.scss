@@ -242,9 +242,17 @@
     color: var(--hover-effect-color);
 }
 
+hr{
+    background-color: var(--gray-color); 
+    height: 2px;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 100px;
+}
 
 footer {
-    border-top: 2px solid var(--gray-color);
     background-color: black;
     height: 100px;
     padding: 20px;
@@ -254,6 +262,7 @@ footer {
     font-family: var(--ff-fancy-body-bad-script);
     color: gray;
     text-shadow: 0.5px 0.5px 0px #CCC;
+
     .copyright{
         font-size: 0.8rem;
     }
@@ -267,6 +276,7 @@ footer {
     border-top: 2px solid black;
     color: black;
     text-shadow: 0.5px 0.5px 0px var(--gray-color);
+    // z-index: 99;
 }
 
 .finger-down{
@@ -315,10 +325,6 @@ footer {
 }
 
 @media only screen and (min-width: 600px){
-    // header{
-    //     background-color: red;
-    // }
-
     .view-resume{
         a{
             padding: 10px 35px;
@@ -365,10 +371,6 @@ footer {
 }
 
 @media only screen and (min-width: 900px){
-    // header{
-    //     background-color: green;
-    // }
-
     .contact-me__content{
         width: 60%;
         h3{

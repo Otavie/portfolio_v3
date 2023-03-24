@@ -2,9 +2,12 @@ const mobileMenuButton = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 const faSun = document.querySelector('.fa-sun');
 const faMoon = document.querySelector('.fa-moon');
+const landingContainer = document.querySelector('.landing-container');
 
 function showMobileMenu(){
     mobileMenu.classList.toggle('active');
+    header.classList.toggle('fixed');
+    landingContainer.classList.toggle('fixed');
 }
 
 function toggleMoon(){
@@ -116,7 +119,6 @@ dayAndDarkMode.addEventListener('click', toggleDayAndNight);
 
 
 const project1Img1Left = document.querySelector('.project-1-img-1-left');
-const project1Img1Right = document.querySelector('.project-1-img-1-right');
 
 project1Img1Right.addEventListener('mouseenter', ()=>{
     project1Img1Left.style.opacity = 0;
@@ -128,7 +130,6 @@ project1Img1Right.addEventListener('mouseleave', ()=>{
 
 
 const project3Img3Left = document.querySelector('.project-3-img-3-left');
-const project3Img3Right = document.querySelector('.project-3-img-3-right');
 
 project3Img3Right.addEventListener('mouseenter', ()=>{
     project3Img3Left.style.opacity = 0;
