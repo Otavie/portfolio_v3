@@ -284,6 +284,10 @@
   width: 100%;
 }
 
+.about-me-inner-content .right .button-content .education {
+  color: white;
+}
+
 .about-me-inner-content .right .button-content .education ul li {
   list-style-type: square;
   margin-left: 1.25rem;
