@@ -14,6 +14,7 @@
     --primary-color: #eeeee4;
     --primary-bg-color: #091F47;
     --hover-effect-color: rgb(180, 164, 164);
+    --gray-color: gray;
 }
 
 @mixin position-center{
@@ -47,7 +48,7 @@
 
 .about-me{
     min-height: 100vh;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 0px;
 }
@@ -119,12 +120,10 @@
     display: inline-block;
     width: 4rem;
     transition: transform ease-in-out 500ms;
-    // font-size: 4rem;
     z-index: 1;
     border-radius: 50%;
     border: 5px solid var(--primary-color);
     margin-right: 0.125rem;
-    border-top-right-radius: 5px solid blue;
 }
 
 .smile-emoji.day{
@@ -134,28 +133,6 @@
 .about-me-h2{
     display: flex;
     align-self: center;
-}
-
-.first-letter-large,
-.about-me-3{
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: opacity 1000ms ease-in-out, transform 1000ms linear;
-}
-
-.about-me-2,
-.about-me-4{
-    opacity: 0;
-    transform: translateX(50%);
-    transition: opacity 750ms ease-in-out, transform 750ms linear;
-}
-
-.first-letter-large.show,
-.about-me-2.show,
-.about-me-3.show,
-.about-me-4.show{
-    opacity: 1;
-    transform: translateX(0%);
 }
 
 .about-me__content{
@@ -186,6 +163,7 @@
     .about-me-4{
         text-align: center;
     }
+  
 }
 
 .about-me__content.day{
@@ -195,16 +173,18 @@
     }
 }
 
+.about-me-otavie{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
 .about-me-emphasise{
     font-weight: 400;
-    color: rgb(180, 170, 170);
-    // text-shadow: 0.5px 0px 0px rgba(255, 255, 255, 0.8);
-    text-shadow: 0.5px 0px 0px gray;
+    color: white;
 }
 
 .about-me-emphasise.day{
     color: gray;
-    // text-shadow: 1px 0px 1px black;
     text-shadow: 0.5px 0px 1px gray;
     color: var(--primary-bg-color);
     color: rgba(9, 31, 71, 0.95);
@@ -215,12 +195,130 @@
     letter-spacing: 0.1rem;
 }
 
+.about-me-inner-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    width: 100%;
+    transition: height 200ms ease-in-out;
+
+    .left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .about-me-button-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            button{
+                text-align: left;
+                width: 24.5%;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                font-family: var(--ff-fancy-body-bad-script);
+                font-size: 1rem;
+                color: white;
+                font-weight: 800;
+                background-color: black;
+                transition: background-color 500ms ease-in-out, transform 500ms ease-in-out;
+            }
+
+            button.active{
+                background-color: #CCC;
+                border-left: 1px solid white;
+                color: black;
+            }
+
+            button:hover{
+                border-left: 1px solid white;
+                transform: scale(1.1);
+            }
+
+        }
+
+    }
+
+    .right{
+        width: 100%;
+
+        .button-content{
+            .education{
+                ul li{
+                    list-style-type: square;
+                    margin-left: 1.25rem;
+                    text-align: right;
+                    padding-left: 1rem;
+                    line-height: 2.5rem;
+                    list-style-position: inside;
+                }
+
+            }
+
+            .education.day{
+                color: black;
+                font-weight: 400;
+            }
+
+
+            h4,
+            h5{
+                font-family: var(--ff-fancy-body-bad-script);
+                font-size: 1.25rem;
+                text-align: right;
+            }    
+
+            h5{
+                font-size: 1.12rem;
+            }
+
+
+        }
+
+    }
+}
+
+.right{
+    height: 100%;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 1000ms ease-in-out, transform 1000ms linear;
+}
+
+.right.show{
+    height: 100%;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1000ms ease-in-out, transform 1000ms linear;
+}
+
+
+.left{
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1000ms ease-in-out, transform 1000ms linear;
+}
+
+.left.show{
+    height: 100%;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1000ms ease-in-out, transform 1000ms linear;
+}
+
 .about-me__content__write-up .skill-sets{
     margin-top: -2.75rem;
     border: none;
 
     .skill-sets__img{
-        // background-color: green;
         border: none;
         z-index: 1;
     }
@@ -257,10 +355,7 @@
     width: 100%;
     min-height: 50vh;
     padding: 0;
-    p{
-        line-height: 1.75rem;
-        font-size: 1rem;
-    }
+    
 }
 
 .skill-sets__img img:nth-child(1){
@@ -271,17 +366,8 @@
     padding: 6.3px 5px;
 }
 
-.about-me__paragraph{
-    margin-top: -0.5rem;
-}
-  
-
 
 @media only screen and (min-width: 600px){
-    // header{
-    //     background-color: red;
-    // }
-
     .about-me__content{
         padding: 0px;
     }
@@ -289,11 +375,7 @@
     .about-me__content__write-up{
         width: 100%;
         min-height: 50vh;
-        padding: 0 10%;
         
-        p{
-            line-height: 2.1rem;
-        }
     }    
 
     .first-letter-large::first-letter {
@@ -306,10 +388,6 @@
         min-height: 50vh;
         padding: 0;
         
-        p{
-            line-height: 2rem;
-            font-size: 1.25rem;
-        }
     }
 
     .about-me__head{
@@ -322,15 +400,48 @@
         width: 4.5rem;
     }
 
-    .about-me__paragraph{
-        margin-top: -0.5rem;
+    .about-me-inner-content{
+        height: 100%;
+        .right{
+            width: 100%;
+
+            .button-content{
+                .education{                    
+                    font-family: var(--ff-body-poppins);
+                    font-size: 1.1rem;
+                    color: white;
+                    font-weight: 200;
+                }
+
+                .education.day{
+                    color: black;
+                    font-weight: 400;
+                }
+
+            }
+        }
+
+        .about-me-button-container{
+            display: flex;
+            align-items: start;
+            width: 100%;
+
+            button{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                width: 24.5%;
+                text-align: left;
+            }
+        }
     }
+
 }
 
 @media only screen and (min-width: 900px){
-    // header{
-    //     background-color: green;
-    // }
+    .about-me__content__name{
+        margin-bottom: 2.5rem;
+    }
 
     .contact-me__head h2{
         font-size: 5rem
@@ -344,8 +455,11 @@
             text-align: center;
             font-size: 5rem;
             color: var(--primary-color);
-            padding: 1.45rem 0rem;
         }
+    }
+
+    .education h4{
+        margin: 0.5rem 0;
     }
 
     .smile-emoji{
@@ -353,14 +467,7 @@
     }
 
     .about-me__content__write-up{
-        width: 90%;
         min-height: 50vh;
-        padding: 0 10%;
-        
-        p{
-            line-height: 2.6rem;
-            font-size: 1.5rem;
-        }
     }    
 
     .first-letter-large::first-letter {
@@ -383,7 +490,6 @@
         padding: 10px 5px;
     }
 
-    
     .skill-sets__img img:nth-child(2),
     .skill-sets__img img:nth-child(3){
         padding: 5.1px 5px;
@@ -393,18 +499,98 @@
         padding: 6.5px 5px;
     }
 
-    .about-me__paragraph{
-        margin-top: 0rem;
+    .about-me-inner-content {
+        display: flex;
+        min-height: 100px;
+        flex-direction: row;
+        width: 100%;
+        transition: height 200ms ease-in-out;
+
+        .left{
+            width: 27%;
+            display: flex;
+            align-items: center;
+            padding-left: 0.5rem;
+
+            .about-me-button-container{
+                display: flex;
+                flex-direction: column;
+
+                button{
+                    text-align: left;
+                    width: 75%;
+                    font-size: 1.2rem;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    margin: 0.75rem;
+                    font-family: var(--ff-fancy-body-bad-script);
+                    font-size: 1.25rem;
+                    color: white;
+                    font-weight: 800;
+                    background-color: black;
+                    text-align: left;
+                    transition: background-color 500ms ease-in-out, transform 500ms ease-in-out;
+                }
+
+                button.active{
+                    background-color: #CCC;
+                    border-left: 1px solid white;
+                    color: black;
+                }    
+
+                button:hover{
+                    border-left: 1px solid white;
+                    transform: scale(1.1);
+                }
+
+            }
+
+        }
+
+        .right{
+            width: 70%;
+            margin-left: 3%;
+
+            .button-content{
+                .education{
+                    font-family: var(--ff-body-poppins);
+                    font-size: 1.2rem;
+                    color: white;
+                    font-weight: 200;
+
+                    ul li{
+                        list-style-type: square;
+                        margin-left: 1.25rem;
+                        padding-left: 1rem;
+                        line-height: 2.5rem;
+                    }
+    
+                }
+
+                .education.day{
+                    color: black;
+                    font-weight: 400;
+                }
+
+                h4,
+                h5{
+                    font-family: var(--ff-fancy-body-bad-script);
+                    font-size: 1.25rem;
+                }
+
+                h5{
+                    font-size: 1.12rem;
+                }
+
+            }            
+        }
     }
-    
-    
+
 }
 
-@media only screen and (min-width: 1200px){
-    // header{
-    //     background-color: purple;
-    // }
 
+@media only screen and (min-width: 1200px){
     .about-me__head{
         height: 40vh;
         h1{
@@ -416,8 +602,94 @@
         width: 6rem;
     }
 
-    .about-me__paragraph{
-        margin-top: 0rem;
-    }
+    .about-me-inner-content {
+        display: flex;
+        flex-direction: row;
+        min-height: 100px;
+        width: 100%;
+        transition: height 200ms ease-in-out;
 
+        .left{
+            width: 27%;
+            display: flex;
+            align-items: center;
+            border-left: 2px solid var(--hover-effect-color);
+            padding-left: 3rem;
+
+            .about-me-button-container{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                button{
+                    text-align: left;
+                    font-size: 1.2rem;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    font-family: var(--ff-fancy-body-bad-script);
+                    font-size: 1.25rem;
+                    color: white;
+                    font-weight: 800;
+                    background-color: black;
+                    transition: background-color 500ms ease-in-out, transform 500ms ease-in-out;
+                }
+
+                button.active{
+                    background-color: #CCC;
+                    border-left: 1px solid white;
+                    color: black;
+                }
+    
+
+                button:hover{
+                    border-left: 1px solid white;
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+        .right{
+            width: 70%;
+            border-right: 2px solid var(--hover-effect-color);
+            padding-right: 3rem;
+            margin-left: 3%;
+
+            .button-content{
+                .education{
+                    font-family: var(--ff-body-poppins);
+                    font-size: 1.2rem;
+                    color: white;
+                    font-weight: 200;
+
+                    ul li{
+                        list-style-type: square;
+                        font-family: var(--ff-body-poppins);
+                        margin-left: 1.25rem;
+                        padding-left: 1rem;
+                        line-height: 2.5rem;
+                    }
+                }
+
+                .education.day{
+                    color: black;
+                    font-weight: 400;
+                }
+
+
+                h4,
+                h5{
+                    font-family: var(--ff-fancy-body-bad-script);
+                    font-size: 1.25rem;
+                }   
+                
+                h5{
+                    font-size: 1.12rem;
+                }
+
+            }
+
+        }
+    }
 }

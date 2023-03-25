@@ -39,9 +39,17 @@ To provide visitors with a more immersive and engaging experience, the section i
 
 My about section provides background information about me, including my education. You can learn more about my journey into frontend development and my passion for creating user-friendly web applications.
 
-#### Skills
+#### Bio
 
-My skills page provides an overview of my expertise in frontend development, including languages, frameworks, and tools I use on a regular basis. I have experience with HTML, CSS, JavaScript, jQuery, Bootstrap, and more.
+This contains brief information about me. Talks about my passion for frontend development.
+
+#### Education
+
+This contains my educational journey, listing research skills and other skills I have learned. Community and other non-academic activities I was involved with while in school.
+
+#### Currently...
+
+This contains what I am currently doing...
 
 ### Contact
 
@@ -53,7 +61,7 @@ To further facilitate communication, there is also a “send email” button tha
 
 ## Credits
 
-This website was developed by [Otavie Okuoyo](https://github.com/Otavie) to fit my personal style and needs. The skill logos were gotten from from [CDN Logo](https://cdnlogo.com/). Static emojis were gotten from [Emojipedia](https://emojipedia.org/), while the animated waving hand emoji was gotten from [GIFEFR](https://gifer.com/en/) and the animated emojis - Smiley Wow and Boy Waving are from [Pixabay](https://pixabay.com/)
+This website was developed by [Otavie Okuoyo](https://github.com/Otavie) to fit my personal style and needs. The skill logos were gotten from from [CDN Logo](https://cdnlogo.com/). Static emojis were gotten from [Emojipedia](https://emojipedia.org/), while the animated waving hand emoji was gotten from [GIFEFR](https://gifer.com/en/) and the animated emojis - Smiley Wow and Boy Waving are from [Pixabay](https://pixabay.com/). Landing page image, that is the CSS Programmer Image, is by [200 Degree](https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1653351/) from [Pixabay](https://pixabay.com/)
 
 ## Duration of Project:
 

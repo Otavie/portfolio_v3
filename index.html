@@ -8,14 +8,10 @@
     <title>Otavie's Portfolio</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script> 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="src/styles.css"> -->
-    <!-- <link rel="stylesheet" href="src/home-styles.css"> -->
-    <link rel="stylesheet" href="home-styles.css">
+    <!-- <link rel="stylesheet" href="src/css.css"> -->
+    <link rel="stylesheet" href="css.css">
     <!-- <link rel="stylesheet" href="src/projects-section.css"> -->
     <link rel="stylesheet" href="projects-section.css">
     <!-- <link rel="stylesheet" href="src/about-me-section.css"> -->
@@ -72,9 +68,7 @@
         </header>   <!-- End of the container div -->
 
         <div class="landing-container">     <!-- Start of the landing-container div -->
-            <!-- <img class="landing-photo" src="h8.jpg" alt="Landing Photo"> -->
-            <img class="landing-photo" src="1.png" alt="Landing Photo">
-            
+            <img class="landing-photo" src="program_css.jpg" alt="Landing Photo">
             <div class="letter">
                 <span class="d">D</span>
                 <span class="w">W</span>
@@ -227,23 +221,90 @@
                         
                     </div>
                                   
-                    <div class="about-me__paragraph">
-                        <p class="first-letter-large paragraphs">
-                            Hi there 👋, I am <span class="about-me-emphasise">Otavie</span>, a frontend developer from Nigeria. My passion for creating visually appealing and interactive web pages has led me to specialize in frontend development where I honed my skills in <span class="about-me-emphasise">HTML</span>, <span class="about-me-emphasise">S(CSS)</span>, <span class="about-me-emphasise">JavaScript</span>, <span class="about-me-emphasise">React</span> and <span class="about-me-emphasise">Vue</span>.
-                        </p>
+                    <div class="about-me-container">
+                        <div class="about-me-inner-content">
+                            <div class="left">
+                                <div class="about-me-button-container">
+                                    <button class="about-me-button active" data-button="button-1">Bio</button>
+                                    <button class="about-me-button" data-button="button-2">Education</button>
+                                    <button class="about-me-button" data-button="button-3">Voluntary</button>
+                                    <button class="about-me-button" data-button="button-4">Currently...</button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="button-content button-content-1" id="button-1">
+                                    <div class="education">
+                                        <h4>Hi there 👋, I am <span class="about-me-otavie">Otavie!</span></h4>
+                                        <ul>
+                                            <li>A passionate <span class="about-me-emphasise">frontend developer</span> 🤓.</li>
+                                            <li>Skilled at <span class="about-me-emphasise">(S)CSS, JS, React, NodeJS</span> and <span class="about-me-emphasise">Python</span> 👨‍💻.</li>
+                                            <li>My passion for creating visually appealing and interactive websites or apps has made me <span class="about-me-emphasise">continuously strive to acquire new skills</span> to remain on top of my game.</li>
+                                            <li>I am a <span class="about-me-emphasise">strongly-motivated individual</span> 💪 with an <span class="about-me-emphasise">open mind, grit</span> and <span class="about-me-emphasise">optimism</span>.</li>
+                                            <li>I am a <span class="about-me-emphasise">Creative Problem Solver</span> capable of translating complex designs into functional and responsive websites or web apps, with <span class="about-me-emphasise">appealing typographies, colours</span> and <span class="about-me-emphasise">layouts</span>.</li>
+                                            <li><span class="three-dots">...</span>when I am not coding, I am a community builder.</li>
+                                        </ul>
+                                    </div>
 
-                        <p class="about-me-2 paragraphs">
-                            I am a <span class="about-me-emphasise">Creative Problem Solver</span> capable of translating complex designs concepts into functional and responsive websites or web apps, with appealing typographies, colours and layouts.
-                        </p>
+                                </div>
 
-                        <p class="about-me-3 paragraphs">
-                            Right now, Otavie is enrolled as a student in two prestigious software development institutes, namely: <span class="about-me-emphasise">ALX Africa</span> and <span class="about-me-emphasise">AltSchool Africa</span>, to keep ahead of the curve and improve his skills. I also participate in software engineering forums, workshops, and conferences.
-                        </p>
+                                <div class="button-content button-content-2" id="button-2">
+                                    <div class="education">
+                                        <h4>MSc, Computer Science 👨‍🎓</h4>
+                                        <h5>Covenant University, Ogun State, Nigeria 🏫.</h5>
+                                        <ul>
+                                            <li>Specialization in <span class="about-me-emphasise">Software Engineering</span>.</li>
+                                            <li>Built a chatbot using <span class="about-me-emphasise">Natural Language Processing</span> techniques available in <span class="about-me-emphasise">Python</span></li>
+                                            <li>Did a research 📚 on <span class="about-me-emphasise">Digital Twin (DT)</span>.</li>
+                                            <li>Project/Research 📚 was based on <span class="about-me-emphasise">Recommender System (RS) using Deep Reinforcement Learning (DRL)</span>.</li>
+                                        </ul>
+                                    
+                                        <h4>BSc, Computer Science 🎓</h4>
+                                        <h5>University of Port Harcourt, Rivers State, Nigeria 🏫.</h5>
+                                        <ul>
+                                            <li>Project 📚 was based on <span class="about-me-emphasise">cryptography</span>.</li>
+                                        </ul>    
+                                    </div>
 
-                        <p class="about-me-4 paragraphs">
-                            <span class="three-dots">...</span>when I am not coding, I am a community builder.
-                        </p>
+                                </div>
+
+                                <div class="button-content button-content-3" id="button-3">
+                                    <div class="education">
+                                        <h4>Community/Voluntary Services </h4>
+                                        <ul>
+                                            <li>Worked as a <span class="about-me-emphasise">trainer</span> at <span class="about-me-emphasise">Hebron Startup Lab</span>, a startup accelerator programme that help students brings their ideas into life.</li>
+                                            <li>Beyond academics, I was an active member of the Covenant University Chaplaincy Unit, called <span class="about-me-emphasise">Olive Media (Technical Unit)</span> where we use technology to spread the gospel and promote spiritual growth.</li>
+                                            <li>I am also an active member of the Faith Tabernacle Service Unit called called <span class="about-me-emphasise">Breakthrough Engineering Crew (Technical Unit)</span> where we use our technical skills to support the growth and development of the church..</li>
+                                        </ul>    
+                                    </div>
+                                </div>
+
+                                <div class="button-content button-content-4" id="button-4">
+                                    <div class="education">
+                                        <h4>Diploma (in view), Software Engineering, ALX Africa 📜</h4>
+                                        <ul>
+                                            <li>Linux commands, usage and manipulations.</li>
+                                            <li>C and Python Programming - Introduction -> Advanced.</li>
+                                            <li>HTML, CSS, SQL and MySQL - Introduction -> Advanced.</li>
+                                            <li>JavaScript and TypeScript - Introduction -> Advanced.</li>
+                                            <li>React - Introduction -> Advanced 💻.</li>
+                                        </ul>    
+                                   
+                                        <h4>Diploma (in view), Software Engineering, AltSchool Africa 📜</h4>
+                                        <ul>
+                                            <li>HTML, CSS - Introduction -> Advanced.</li>
+                                            <li>JavaScript, TypeScript and JSX - Introduction -> Advanced.</li>
+                                            <li>React and Vue - Introduction -> Advanced 💻.</li>
+                                        </ul>    
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
+
+
+                
                 </div>
             </div>
           </section>
@@ -285,7 +346,7 @@
                     
                 </div>
             </section>
-            <hr>
+            <hr class="hr">
             <footer class="footer">
                 <p class="copyright">Copyright © 2023 by Otavie</p>
             </footer> 

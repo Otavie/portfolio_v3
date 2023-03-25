@@ -382,10 +382,6 @@
 
 
 @media only screen and (min-width: 600px){
-    // header{
-    //     background-color: red;
-    // }
-
     .container-content{
         padding: 0 10%;
         margin: 0 auto;
@@ -432,10 +428,6 @@
 }
 
 @media only screen and (min-width: 900px){
-    // header{
-    //     background-color: green;
-    // }
-
     .projects-item-contents{
         flex-direction: row;
         @include flex-center;
@@ -556,10 +548,6 @@
 
 
 @media only screen and (min-width: 1200px){
-    // header{
-    //     background-color: purple;
-    // }
-
     .container-content{
         padding: 0 5rem;
     }

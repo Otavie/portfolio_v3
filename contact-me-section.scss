@@ -155,7 +155,6 @@
 
 .waving-emoji{
     cursor: pointer;
-    // background-color: white;
     display: inline;
     height: 100px;
     width: auto;
@@ -242,7 +241,7 @@
     color: var(--hover-effect-color);
 }
 
-hr{
+.hr{
     background-color: var(--gray-color); 
     height: 2px;
     outline: none;
@@ -250,6 +249,10 @@ hr{
     position: absolute;
     left: 0; right: 0;
     bottom: 100px;
+}
+
+.hr.day{
+    background-color: black;
 }
 
 footer {
@@ -273,10 +276,8 @@ footer {
 
 .footer.day{
     background-color: white;
-    border-top: 2px solid black;
     color: black;
     text-shadow: 0.5px 0.5px 0px var(--gray-color);
-    // z-index: 99;
 }
 
 .finger-down{
@@ -405,10 +406,6 @@ footer {
 }
 
 @media only screen and (min-width: 1200px){
-    // header{
-    //     background-color: purple;
-    // }
-
     .contact-me__content{
         width: 100%;
         h3{

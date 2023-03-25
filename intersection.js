@@ -176,41 +176,39 @@ observerAboutMeH2Outer.observe(aboutMeH2Outer);
 
 
 // For the About Me Paragraphs
-const aboutMeOne = document.querySelector('.first-letter-large');
-function toggleParagraphOne(entries){
-    entries.forEach(entry =>{
-        aboutMeOne.classList.toggle('show', entry.isIntersecting);
-    })
-}
-const observerParagraphOne = new IntersectionObserver(toggleParagraphOne, options);
-observerParagraphOne.observe(aboutMeOne);
 
-const aboutMeTwo = document.querySelector('.about-me-2');
-function toggleParagraphTwo(entries){
-    entries.forEach(entry =>{
-        aboutMeTwo.classList.toggle('show', entry.isIntersecting);
-    })
-}
-const observerParagraphTwo = new IntersectionObserver(toggleParagraphTwo, options);
-observerParagraphTwo.observe(aboutMeTwo);
+const buttons = document.querySelectorAll('.about-me-button');
 
-const aboutMeThree = document.querySelector('.about-me-3');
-function toggleParagraphThree(entries){
-    entries.forEach(entry =>{
-        aboutMeThree.classList.toggle('show', entry.isIntersecting);
-    })
-}
-const observerParagraphThree = new IntersectionObserver(toggleParagraphThree, options);
-observerParagraphThree.observe(aboutMeThree);
+buttons.forEach(button => {
+    button.addEventListener('click', event => {
+        const clickedButton = event.target;
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                clickedButton.classList.add('active');
+            });
+        clickedButton.classList.add('active');
+    });
+});
 
-const aboutMeFour = document.querySelector('.about-me-4');
-function toggleParagraphFour(entries){
+const right = document.querySelector('.right');
+function toggleRight(entries){
     entries.forEach(entry =>{
-        aboutMeFour.classList.toggle('show', entry.isIntersecting);
+        right.classList.toggle('show', entry.isIntersecting);
     })
 }
-const observerParagraphFour = new IntersectionObserver(toggleParagraphFour, options);
-observerParagraphFour.observe(aboutMeFour);
+const observerRight = new IntersectionObserver(toggleRight, options);
+observerRight.observe(right);
+
+const left = document.querySelector('.left');
+function toggleLeft(entries){
+    entries.forEach(entry =>{
+        left.classList.toggle('show', entry.isIntersecting);
+    })
+}
+const observerLeft = new IntersectionObserver(toggleLeft, options);
+observerLeft.observe(left);
+
+
 
 const contactMeHead = document.querySelector('.contact-me__head');
 function toggleContactMeHead(entries){
