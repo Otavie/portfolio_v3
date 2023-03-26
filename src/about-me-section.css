@@ -285,6 +285,9 @@
 }
 
 .about-me-inner-content .right .button-content .education {
+  font-family: var(--ff-body-poppins);
+  font-size: 1rem;
+  font-weight: 200;
   color: white;
 }
 
@@ -300,6 +303,10 @@
 .about-me-inner-content .right .button-content .education.day {
   color: black;
   font-weight: 400;
+}
+
+.about-me-inner-content .right .button-content h4 {
+  margin-top: 1rem;
 }
 
 .about-me-inner-content .right .button-content h4,
@@ -453,6 +460,9 @@
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+  }
+  .about-me-inner-content .right .button-content h4 {
+    margin-top: 1rem;
   }
   .about-me-inner-content .about-me-button-container {
     display: -webkit-box;
@@ -610,6 +620,9 @@
     color: black;
     font-weight: 400;
   }
+  .about-me-inner-content .right .button-content h4 {
+    margin-top: 1rem;
+  }
   .about-me-inner-content .right .button-content h4,
   .about-me-inner-content .right .button-content h5 {
     font-family: var(--ff-fancy-body-bad-script);
@@ -714,6 +727,9 @@
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+  }
+  .about-me-inner-content .right .button-content h4 {
+    margin-top: 1rem;
   }
   .about-me-inner-content .right .button-content h4,
   .about-me-inner-content .right .button-content h5 {

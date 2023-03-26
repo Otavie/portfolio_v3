@@ -5,6 +5,10 @@ options = {
     threshold: 0.5
 }
 
+optionsTwo = {
+    threshold: 0.3
+}
+
 function toggleProjectsH1(entries){
     entries.forEach(entry =>{
         projectsHeadH1.classList.toggle('show', entry.isIntersecting)
@@ -149,8 +153,6 @@ function toggleProjectsImgThreeRight(entries){
 const observerProjectsImgThreeRight = new IntersectionObserver(toggleProjectsImgThreeRight, options);
 observerProjectsImgThreeRight.observe(projectsItemContentsImgThree);
 
-// projects-item-contents-img-right
-
 
 // For the About Me Head Title
 const aboutMeHead = document.querySelector('.about-me__head');
@@ -196,7 +198,7 @@ function toggleRight(entries){
         right.classList.toggle('show', entry.isIntersecting);
     })
 }
-const observerRight = new IntersectionObserver(toggleRight, options);
+const observerRight = new IntersectionObserver(toggleRight, optionsTwo);
 observerRight.observe(right);
 
 const left = document.querySelector('.left');

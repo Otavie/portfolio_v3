@@ -57,6 +57,7 @@ header.day ul li a:focus {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  background-color: green;
 }
 
 .landing {

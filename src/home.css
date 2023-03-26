@@ -34,6 +34,7 @@ header {
 }
 
 header.day {
+  background-color: #9e3636;
   background-color: #CCC;
 }
 
@@ -45,6 +46,7 @@ header.day ul li a {
 header.day ul li a:hover,
 header.day ul li a:active,
 header.day ul li a:focus {
+  color: #9e3636;
   color: #574f4f;
   border: 1.5px solid #574f4f;
 }
@@ -57,7 +59,6 @@ header.day ul li a:focus {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  background-color: green;
 }
 
 .landing {
@@ -238,7 +239,6 @@ header.day ul li a:focus {
   width: 100%;
   position: absolute;
   position: fixed;
-  top: 100px;
   right: 0;
   bottom: 0;
   -o-object-fit: cover;

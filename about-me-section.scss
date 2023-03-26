@@ -251,6 +251,10 @@
 
         .button-content{
             .education{
+                font-family: var(--ff-body-poppins);
+                font-size: 1rem;
+                font-weight: 200;
+
                 color: white;
                 ul li{
                     list-style-type: square;
@@ -268,6 +272,9 @@
                 font-weight: 400;
             }
 
+            h4{
+                margin-top: 1rem;
+            }
 
             h4,
             h5{
@@ -419,7 +426,12 @@
                     font-weight: 400;
                 }
 
+                h4{
+                    margin-top: 1rem;
+                }    
+
             }
+
         }
 
         .about-me-button-container{
@@ -574,6 +586,10 @@
                     font-weight: 400;
                 }
 
+                h4{
+                    margin-top: 1rem;
+                }
+    
                 h4,
                 h5{
                     font-family: var(--ff-fancy-body-bad-script);
@@ -678,7 +694,10 @@
                     font-weight: 400;
                 }
 
-
+                h4{
+                    margin-top: 1rem;
+                }
+    
                 h4,
                 h5{
                     font-family: var(--ff-fancy-body-bad-script);
