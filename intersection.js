@@ -45,6 +45,9 @@ observerProjectsItemContentsWriteOne.observe(projectsItemContentsWriteOne);
 observerProjectsItemContentsWriteOne.observe(projectsItemContentsWriteOneH3); //This was not here.
 
 
+const project1Img1Left = document.querySelector('.project-1-img-1-left');
+
+
 const projectsItemContentsImgOne = document.querySelector('.projects-item-contents-img-1');
 function toggleProjectsImgOneLeft(entries){
     entries.forEach(entry =>{
@@ -90,22 +93,29 @@ const observerProjectsItemContentsWriteTwo = new IntersectionObserver(toggleProj
 observerProjectsItemContentsWriteTwo.observe(projectsItemContentsWriteTwo);
 
 
-const projectsItemContentsImgRight = document.querySelector('.projects-item-contents-img-right');
+
+const project2Img2Right = document.querySelector('.project-2-img-2-right');
+
+// const projectsItemContentsImgRight = document.querySelector('.projects-item-contents-img-right');
 function toggleProjectsImgTwoRight(entries){
     entries.forEach(entry =>{
         project2Img2Right.classList.toggle('show', entry.isIntersecting);
     });
 }
 const observerProjectsImgTwoRight = new IntersectionObserver(toggleProjectsImgTwoRight, options);
-observerProjectsImgTwoRight.observe(projectsItemContentsImgRight);
+// observerProjectsImgTwoRight.observe(projectsItemContentsImgRight);
+observerProjectsImgTwoRight.observe(project2Img2Right);
 
+
+const project2Img2Left = document.querySelector('.project-2-img-2-left');
 function toggleProjectsImgTwoLeft(entries){
     entries.forEach(entry =>{
         project2Img2Left.classList.toggle('show', entry.isIntersecting);
     });
 }
 const observerProjectsImgTwoLeft = new IntersectionObserver(toggleProjectsImgTwoLeft, options);
-observerProjectsImgTwoLeft.observe(projectsItemContentsImgRight);
+// observerProjectsImgTwoLeft.observe(projectsItemContentsImgRight);
+observerProjectsImgTwoLeft.observe(project2Img2Left);
 
 
 
@@ -134,6 +144,9 @@ function toggleProjectsWriteThree(entries){
 }
 const observerProjectsItemContentsWriteThree = new IntersectionObserver(toggleProjectsWriteThree, options)
 observerProjectsItemContentsWriteThree.observe(projectsItemContentsWriteThree)
+
+
+const project3Img3Left = document.querySelector('.project-3-img-3-left');
 
 
 const projectsItemContentsImgThree = document.querySelector('.projects-item-contents-img-3');

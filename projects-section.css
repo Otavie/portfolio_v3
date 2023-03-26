@@ -361,8 +361,8 @@
 }
 
 .project-2-img-2-right {
-  -webkit-transform: scale(1) translateX(200%);
-          transform: scale(1) translateX(200%);
+  -webkit-transform: scale(1) translateX(100%);
+          transform: scale(1) translateX(100%);
   opacity: 0;
   -webkit-transition: opacity 750ms ease-in-out, -webkit-transform 1100ms ease-in-out;
   transition: opacity 750ms ease-in-out, -webkit-transform 1100ms ease-in-out;

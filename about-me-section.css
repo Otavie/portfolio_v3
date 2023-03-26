@@ -271,6 +271,8 @@
 .about-me-inner-content .left .about-me-button-container button.active {
   background-color: #CCC;
   border-left: 1px solid white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   color: black;
 }
 
@@ -298,11 +300,16 @@
   padding-left: 1rem;
   line-height: 2.5rem;
   list-style-position: inside;
+  color: red;
 }
 
 .about-me-inner-content .right .button-content .education.day {
   color: black;
   font-weight: 400;
+}
+
+.about-me-inner-content .right .button-content .education.day ul li {
+  color: green;
 }
 
 .about-me-inner-content .right .button-content h4 {
@@ -457,9 +464,15 @@
     color: white;
     font-weight: 200;
   }
+  .about-me-inner-content .right .button-content .education ul li {
+    color: red;
+  }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+  }
+  .about-me-inner-content .right .button-content .education.day ul li {
+    color: green;
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
@@ -593,6 +606,8 @@
   .about-me-inner-content .left .about-me-button-container button.active {
     background-color: #CCC;
     border-left: 1px solid white;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     color: black;
   }
   .about-me-inner-content .left .about-me-button-container button:hover {
@@ -615,10 +630,14 @@
     margin-left: 1.25rem;
     padding-left: 1rem;
     line-height: 2.5rem;
+    color: red;
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+  }
+  .about-me-inner-content .right .button-content .education.day ul li {
+    color: green;
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
@@ -698,6 +717,8 @@
   .about-me-inner-content .left .about-me-button-container button.active {
     background-color: #CCC;
     border-left: 1px solid white;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     color: black;
   }
   .about-me-inner-content .left .about-me-button-container button:hover {
@@ -723,10 +744,14 @@
     margin-left: 1.25rem;
     padding-left: 1rem;
     line-height: 2.5rem;
+    color: red;
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+  }
+  .about-me-inner-content .right .button-content .education.day ul li {
+    color: green;
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;

@@ -125,8 +125,6 @@ function toggleDayAndNight(){
 dayAndDarkMode.addEventListener('click', toggleDayAndNight);
 
 
-const project1Img1Left = document.querySelector('.project-1-img-1-left');
-
 project1Img1Right.addEventListener('mouseenter', ()=>{
     project1Img1Left.style.opacity = 0;
 });
@@ -134,9 +132,6 @@ project1Img1Right.addEventListener('mouseenter', ()=>{
 project1Img1Right.addEventListener('mouseleave', ()=>{
     project1Img1Left.style.opacity = 1;
 });
-
-
-const project3Img3Left = document.querySelector('.project-3-img-3-left');
 
 project3Img3Right.addEventListener('mouseenter', ()=>{
     project3Img3Left.style.opacity = 0;
@@ -146,9 +141,6 @@ project3Img3Right.addEventListener('mouseleave', ()=>{
     project3Img3Left.style.opacity = 1;
 });
 
-
-const project2Img2Right = document.querySelector('.project-2-img-2-right');
-const project2Img2Left = document.querySelector('.project-2-img-2-left');
 
 project2Img2Left.addEventListener('mouseenter', ()=>{
     project2Img2Right.style.opacity = 0;
