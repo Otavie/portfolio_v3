@@ -6,26 +6,26 @@ gsap.to(".w", {duration: 2.5, y: '30vh', ease: "power4.easeOut"}, 1);
 gsap.to(".w", {duration: 1.5, opacity:0, ease: "Power0.easeNone"}, 2.5);
 
 
-gsap.fromTo(".top-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 5);
+gsap.fromTo(".top-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 6);
 
-gsap.fromTo(".top-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut", delay: 8});
-gsap.to(".top-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 12);
+gsap.fromTo(".top-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut", delay: 9});
+gsap.to(".top-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 13);
 setTimeout(function() {
   document.querySelector('.top-right').addEventListener('click', function() {
     document.querySelector('.projects-item-1').scrollIntoView();
   });
 }, 6000);
 
-gsap.fromTo(".bottom-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 10);
-gsap.to(".bottom-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 14);
+gsap.fromTo(".bottom-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 11);
+gsap.to(".bottom-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 15);
 setTimeout(function() {
   document.querySelector('.bottom-right').addEventListener('click', function() {
     document.querySelector('.projects-item-2').scrollIntoView();
   });
 }, 6000);
 
-gsap.fromTo(".bottom-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 12)
-gsap.to(".bottom-left", {cursor: 'pointer', ease: "Power0.easeNone"}, 17);
+gsap.fromTo(".bottom-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 13)
+gsap.to(".bottom-left", {cursor: 'pointer', ease: "Power0.easeNone"}, 18);
 setTimeout(function() {
   document.querySelector('.bottom-left').addEventListener('click', function() {
     document.querySelector('.projects-item-3').scrollIntoView();
@@ -34,10 +34,10 @@ setTimeout(function() {
 
 
 
-gsap.fromTo(".finger-direction", {opacity: 0}, {duration: 1, opacity: 1, ease: "power2.easeOut"}, 8.5)
-gsap.to(".finger-direction", {duration: 1.5, transform: 'rotate(45deg)', ease: "power2.easeOut"}, 11);
-gsap.to(".finger-direction", {duration: 1.5, transform: 'rotate(90deg)', ease: "power2.easeOut"}, 13.5);
-gsap.to(".finger-direction", {duration: 1.5, opacity: 0, ease: "power2.easeOut"}, 16);
+gsap.fromTo(".finger-direction", {opacity: 0}, {duration: 1, opacity: 1, ease: "power2.easeOut"}, 10)
+gsap.to(".finger-direction", {duration: 1.5, transform: 'rotate(45deg)', ease: "power2.easeOut"}, 12.5);
+gsap.to(".finger-direction", {duration: 1.5, transform: 'rotate(90deg)', ease: "power2.easeOut"}, 15);
+gsap.to(".finger-direction", {duration: 1.5, opacity: 0, ease: "power2.easeOut"}, 17.5);
 
 
 
