@@ -3,8 +3,8 @@
   --landing-height: calc(45vh - 100px);
   --hover-effect-color: rgb(180, 164, 164);
   --primary-color: #eeeee4;
-  --ff-landing-title-orbitron: "Orbitron", sans-serif;
-  --ff-fancy-body-bad-script: "Bad Script", cursive;
+  --ff-landing-title-orbitron: 'Orbitron', sans-serif;
+  --ff-fancy-body-bad-script: 'Bad Script', cursive;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -34,7 +34,7 @@ header {
 }
 
 header.day {
-  background-color: #ccc;
+  background-color: #CCC;
 }
 
 header.day ul li a {
@@ -55,9 +55,8 @@ header.day ul li a:focus {
   position: relative;
   z-index: 1;
   -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-  background-color: green;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .landing {
@@ -67,11 +66,11 @@ header.day ul li a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: black;
   position: absolute;
   top: 0;
@@ -92,10 +91,10 @@ header.day ul li a:focus {
   bottom: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat(2, 50%);
-  grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
   color: white;
   position: relative;
 }
@@ -119,7 +118,7 @@ header.day ul li a:focus {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 50px;
   height: 1.5px;
   background-color: gray;
@@ -129,22 +128,22 @@ header.day ul li a:focus {
 
 .landing-project::before {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .landing-project::after {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-  transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .landing-project::before {
   -webkit-animation: show-after-before 2s 16s forwards;
-  animation: show-after-before 2s 16s forwards;
+          animation: show-after-before 2s 16s forwards;
 }
 
 .landing-project::after {
   -webkit-animation: show-after-before 2s 16s forwards;
-  animation: show-after-before 2s 16s forwards;
+          animation: show-after-before 2s 16s forwards;
 }
 
 @-webkit-keyframes show-after-before {
@@ -166,27 +165,25 @@ header.day ul li a:focus {
   padding: 2rem;
   display: none;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background-color: black;
   height: 100%;
   width: 100%;
   z-index: 2;
   color: gray;
-  -webkit-transition: opacity ease-in-out 3000ms,
-    -webkit-transform ease-in-out 750ms;
+  -webkit-transition: opacity ease-in-out 3000ms, -webkit-transform ease-in-out 750ms;
   transition: opacity ease-in-out 3000ms, -webkit-transform ease-in-out 750ms;
   transition: transform ease-in-out 750ms, opacity ease-in-out 3000ms;
-  transition: transform ease-in-out 750ms, opacity ease-in-out 3000ms,
-    -webkit-transform ease-in-out 750ms;
+  transition: transform ease-in-out 750ms, opacity ease-in-out 3000ms, -webkit-transform ease-in-out 750ms;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   opacity: 0;
 }
 
@@ -224,7 +221,7 @@ header.day ul li a:focus {
 .bottom-right:hover {
   color: #bebdbd;
   -webkit-transform: scale(1.015);
-  transform: scale(1.015);
+          transform: scale(1.015);
 }
 
 .top-left.day,
@@ -244,9 +241,9 @@ header.day ul li a:focus {
   right: 0;
   bottom: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: bottom;
-  object-position: bottom;
+     object-position: bottom;
 }
 
 .landing-img-container {
@@ -287,7 +284,7 @@ header.fixed {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   height: 40px;
   background: transparent;
   z-index: 200;
@@ -309,16 +306,16 @@ header.fixed {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 2;
 }
 
@@ -343,15 +340,15 @@ header.fixed {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: black;
   text-align: center;
   text-shadow: 1px 1px 10px red;
@@ -363,7 +360,7 @@ header.fixed {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0;
 }
 
@@ -387,7 +384,7 @@ header.fixed {
 
 header nav {
   -webkit-transform: translateX(calc(100vw + 100px));
-  transform: translateX(calc(100vw + 100px));
+          transform: translateX(calc(100vw + 100px));
   -webkit-transition: -webkit-transform ease-in-out 500ms;
   transition: -webkit-transform ease-in-out 500ms;
   transition: transform ease-in-out 500ms;
@@ -402,8 +399,8 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header nav ul li {
@@ -441,7 +438,7 @@ header nav ul li a:active {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   display: inline;
   right: calc(2.5% + 20px);
   -webkit-transition: right ease-in-out 500ms;
@@ -455,7 +452,7 @@ header nav ul li a:active {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .day-and-dark-mode .fa-moon,
@@ -496,11 +493,11 @@ header nav ul li a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
   width: 100px;
   position: absolute;
@@ -522,19 +519,16 @@ header nav ul li a:active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-transform: translateX(0vw);
-  transform: translateX(0vw);
-  -webkit-transition: background-color ease-in-out 750ms,
-    -webkit-transform ease-in-out 750ms;
-  transition: background-color ease-in-out 750ms,
-    -webkit-transform ease-in-out 750ms;
+          transform: translateX(0vw);
+  -webkit-transition: background-color ease-in-out 750ms, -webkit-transform ease-in-out 750ms;
+  transition: background-color ease-in-out 750ms, -webkit-transform ease-in-out 750ms;
   transition: transform ease-in-out 750ms, background-color ease-in-out 750ms;
-  transition: transform ease-in-out 750ms, background-color ease-in-out 750ms,
-    -webkit-transform ease-in-out 750ms;
+  transition: transform ease-in-out 750ms, background-color ease-in-out 750ms, -webkit-transform ease-in-out 750ms;
   z-index: 200;
 }
 
@@ -548,7 +542,7 @@ header nav ul li a:active {
 }
 
 .mobile-menu-button:hover {
-  background-color: #ccc;
+  background-color: #CCC;
   -webkit-transition: background-color ease-in-out 750ms;
   transition: background-color ease-in-out 750ms;
 }
@@ -561,11 +555,11 @@ header nav ul li a:active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: inherit;
   z-index: -2;
   width: calc(100vh - 110px);
@@ -594,9 +588,9 @@ header nav ul li a:active {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-  transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .mobile-menu {
@@ -621,14 +615,14 @@ header nav ul li a:active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .mobile-menu ul li a {
@@ -646,7 +640,7 @@ header nav ul li a:active {
   width: 90%;
   background-color: black;
   -webkit-transform: translateX(0vw);
-  transform: translateX(0vw);
+          transform: translateX(0vw);
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
@@ -661,14 +655,14 @@ header nav ul li a:active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .mobile-menu.active ul li a {
@@ -686,7 +680,7 @@ header nav ul li a:active {
 
 .mobile-menu.day {
   background-color: var(--primary-bg-color);
-  background-color: #ccc;
+  background-color: #CCC;
 }
 
 .mobile-menu.day a {
@@ -702,13 +696,13 @@ header nav ul li a:active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill-sets__img {
@@ -716,12 +710,12 @@ header nav ul li a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 50px;
   height: auto;
   -ms-flex-line-pack: end;
-  align-content: flex-end;
+      align-content: flex-end;
   min-width: 160px;
 }
 
@@ -730,7 +724,7 @@ header nav ul li a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   height: auto;
   width: 25px;
   border-bottom: 1px solid white;
@@ -748,8 +742,8 @@ header nav ul li a:active {
   }
   .write-up-inside-mobile-menu {
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   header nav ul li:last-child {
     margin-right: calc(2.5% + 50px);
@@ -769,13 +763,13 @@ header nav ul li a:active {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
     z-index: 1;
     left: 0;
     position: absolute;
@@ -788,9 +782,9 @@ header nav ul li a:active {
     right: 0;
     bottom: 0;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     -o-object-position: bottom;
-    object-position: bottom;
+       object-position: bottom;
   }
   .landing-img-container {
     top: 0;
@@ -804,15 +798,15 @@ header nav ul li a:active {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     opacity: 0;
   }
   .write-up h3 {
@@ -832,10 +826,10 @@ header nav ul li a:active {
     height: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: repeat(2, 50%);
-    grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
     top: 0;
     position: relative;
     z-index: 2;
@@ -848,28 +842,28 @@ header nav ul li a:active {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 100px;
   }
   .landing-project::before {
     -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
   }
   .landing-project::after {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
   }
   .skill-sets__img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 50px;
     height: auto;
     -ms-flex-line-pack: end;
-    align-content: flex-end;
+        align-content: flex-end;
     min-width: 170px;
   }
 }
@@ -881,7 +875,7 @@ header nav ul li a:active {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .write-up h3 {
     font-size: 4rem;
@@ -893,12 +887,11 @@ header nav ul li a:active {
   }
   header nav {
     -webkit-transform: translateX(0vw);
-    transform: translateX(0vw);
+            transform: translateX(0vw);
     -webkit-transition: -webkit-transform ease-in-out 1000ms;
     transition: -webkit-transform ease-in-out 1000ms;
     transition: transform ease-in-out 1000ms;
-    transition: transform ease-in-out 1000ms,
-      -webkit-transform ease-in-out 1000ms;
+    transition: transform ease-in-out 1000ms, -webkit-transform ease-in-out 1000ms;
   }
   .container-nav {
     width: 90%;
@@ -908,7 +901,7 @@ header nav ul li a:active {
   }
   .mobile-menu-button {
     -webkit-transform: translateX(100vw);
-    transform: translateX(100vw);
+            transform: translateX(100vw);
     -webkit-transition: -webkit-transform ease-in-out 500ms;
     transition: -webkit-transform ease-in-out 500ms;
     transition: transform ease-in-out 500ms;
@@ -917,7 +910,7 @@ header nav ul li a:active {
   .mobile-menu,
   .mobile-menu.active {
     -webkit-transform: translateX(100vw);
-    transform: translateX(100vw);
+            transform: translateX(100vw);
     -webkit-transition: -webkit-transform 500ms ease-in-out;
     transition: -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
@@ -931,12 +924,12 @@ header nav ul li a:active {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 50px;
     height: auto;
     -ms-flex-line-pack: end;
-    align-content: flex-end;
+        align-content: flex-end;
     min-width: 240px;
   }
   .skill-sets__img img {
@@ -944,7 +937,7 @@ header nav ul li a:active {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
-    align-self: center;
+        align-self: center;
     height: auto;
     width: 35px;
     padding: 5px;
@@ -978,16 +971,16 @@ header nav ul li a:active {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 140px;
   }
   .landing-project::before {
     -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
   }
   .landing-project::after {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
 
@@ -1011,15 +1004,15 @@ header nav ul li a:active {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 180px;
   }
   .landing-project::before {
     -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
   }
   .landing-project::after {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
   }
 }

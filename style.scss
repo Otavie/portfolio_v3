@@ -81,7 +81,6 @@ header.day{
     position: relative;
     z-index: 1;
     order: 1;
-    background-color: green;
 }
 
 .landing{
@@ -107,8 +106,10 @@ header.day{
     position: absolute;
     bottom: 0;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
+    // grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 50% 50%;
+    // grid-template-rows: repeat(2, 50%);
+    grid-template-rows: 50% 50%;
     color: white;
     position: relative;
     h3{
@@ -568,18 +569,12 @@ header nav ul li a:active{
 .mobile-menu.day{
     background-color: var(--primary-bg-color);
     background-color: #CCC;
-    // border: 1.5px solid var(--primary-bg-color);
+    
     a{
         color: black;
         border-color: black;
     }
-
 }
-
-
-
-
-
 
 .skill-sets{
     width: 100%;
@@ -608,7 +603,6 @@ header nav ul li a:active{
     padding: 5px;
     border-radius: 6px;
 }
-
 
 @media only screen and (min-width: 600px){
     header{
@@ -646,7 +640,6 @@ header nav ul li a:active{
         z-index: 1;
         left: 0;
         position: absolute;
-        // background-color: red;
     }
     
     .landing-photo{
@@ -693,8 +686,10 @@ header nav ul li a:active{
         height: 100%;
         // position: absolute;
         display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 50%);
+        // grid-template-columns: repeat(2, 50%);
+        grid-template-columns: 50% 50%;
+        // grid-template-rows: repeat(2, 50%);
+        grid-template-rows: 50% 50%;
         top: 0;
         position: relative;
         z-index: 2;

@@ -34,7 +34,6 @@ header {
 }
 
 header.day {
-  background-color: #9e3636;
   background-color: #CCC;
 }
 
@@ -46,7 +45,6 @@ header.day ul li a {
 header.day ul li a:hover,
 header.day ul li a:active,
 header.day ul li a:focus {
-  color: #9e3636;
   color: #574f4f;
   border: 1.5px solid #574f4f;
 }
@@ -93,10 +91,10 @@ header.day ul li a:focus {
   bottom: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: (50%)[2];
-      grid-template-rows: repeat(2, 50%);
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
   color: white;
   position: relative;
 }
@@ -239,6 +237,7 @@ header.day ul li a:focus {
   width: 100%;
   position: absolute;
   position: fixed;
+  top: 100px;
   right: 0;
   bottom: 0;
   -o-object-fit: cover;
@@ -827,10 +826,10 @@ header nav ul li a:active {
     height: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: (50%)[2];
-        grid-template-rows: repeat(2, 50%);
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
     top: 0;
     position: relative;
     z-index: 2;

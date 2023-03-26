@@ -96,14 +96,14 @@ observerProjectsItemContentsWriteTwo.observe(projectsItemContentsWriteTwo);
 
 const project2Img2Right = document.querySelector('.project-2-img-2-right');
 
-// const projectsItemContentsImgRight = document.querySelector('.projects-item-contents-img-right');
+const projectsItemContentsImgRight = document.querySelector('.projects-item-contents-img-right');
 function toggleProjectsImgTwoRight(entries){
     entries.forEach(entry =>{
         project2Img2Right.classList.toggle('show', entry.isIntersecting);
     });
 }
 const observerProjectsImgTwoRight = new IntersectionObserver(toggleProjectsImgTwoRight, options);
-// observerProjectsImgTwoRight.observe(projectsItemContentsImgRight);
+observerProjectsImgTwoRight.observe(projectsItemContentsImgRight);
 observerProjectsImgTwoRight.observe(project2Img2Right);
 
 
@@ -114,7 +114,7 @@ function toggleProjectsImgTwoLeft(entries){
     });
 }
 const observerProjectsImgTwoLeft = new IntersectionObserver(toggleProjectsImgTwoLeft, options);
-// observerProjectsImgTwoLeft.observe(projectsItemContentsImgRight);
+observerProjectsImgTwoLeft.observe(projectsItemContentsImgRight);
 observerProjectsImgTwoLeft.observe(project2Img2Left);
 
 

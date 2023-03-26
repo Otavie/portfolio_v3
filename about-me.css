@@ -300,7 +300,7 @@
   padding-left: 1rem;
   line-height: 2.5rem;
   list-style-position: inside;
-  color: red;
+  color: white;
 }
 
 .about-me-inner-content .right .button-content .education.day {
@@ -309,7 +309,7 @@
 }
 
 .about-me-inner-content .right .button-content .education.day ul li {
-  color: green;
+  color: black;
 }
 
 .about-me-inner-content .right .button-content h4 {
@@ -465,14 +465,14 @@
     font-weight: 200;
   }
   .about-me-inner-content .right .button-content .education ul li {
-    color: red;
+    color: white;
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
   }
   .about-me-inner-content .right .button-content .education.day ul li {
-    color: green;
+    color: black;
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
@@ -630,14 +630,14 @@
     margin-left: 1.25rem;
     padding-left: 1rem;
     line-height: 2.5rem;
-    color: red;
+    color: white;
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
   }
   .about-me-inner-content .right .button-content .education.day ul li {
-    color: green;
+    color: black;
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
@@ -744,14 +744,14 @@
     margin-left: 1.25rem;
     padding-left: 1rem;
     line-height: 2.5rem;
-    color: red;
+    color: white;
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
   }
   .about-me-inner-content .right .button-content .education.day ul li {
-    color: green;
+    color: black;
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
