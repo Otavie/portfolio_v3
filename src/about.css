@@ -301,15 +301,18 @@
   line-height: 2.5rem;
   list-style-position: inside;
   color: white;
+  font-family: var(--ff-body-poppins);
 }
 
 .about-me-inner-content .right .button-content .education.day {
   color: black;
   font-weight: 400;
+  font-family: var(--ff-body-poppins);
 }
 
 .about-me-inner-content .right .button-content .education.day ul li {
   color: black;
+  font-family: var(--ff-body-poppins);
 }
 
 .about-me-inner-content .right .button-content h4 {
@@ -466,13 +469,16 @@
   }
   .about-me-inner-content .right .button-content .education ul li {
     color: white;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content .education.day ul li {
     color: black;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
@@ -631,13 +637,16 @@
     padding-left: 1rem;
     line-height: 2.5rem;
     color: white;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content .education.day ul li {
     color: black;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
@@ -749,9 +758,11 @@
   .about-me-inner-content .right .button-content .education.day {
     color: black;
     font-weight: 400;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content .education.day ul li {
     color: black;
+    font-family: var(--ff-body-poppins);
   }
   .about-me-inner-content .right .button-content h4 {
     margin-top: 1rem;
