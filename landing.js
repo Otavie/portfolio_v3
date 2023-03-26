@@ -6,26 +6,26 @@ gsap.to(".w", {duration: 2.5, y: '30vh', ease: "power4.easeOut"}, 1);
 gsap.to(".w", {duration: 1.5, opacity:0, ease: "Power0.easeNone"}, 2.5);
 
 
-gsap.fromTo(".top-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 4);
+gsap.fromTo(".top-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 5);
 
-gsap.fromTo(".top-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut", delay: 7});
-gsap.to(".top-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 11);
+gsap.fromTo(".top-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut", delay: 8});
+gsap.to(".top-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 12);
 setTimeout(function() {
   document.querySelector('.top-right').addEventListener('click', function() {
     document.querySelector('.projects-item-1').scrollIntoView();
   });
 }, 6000);
 
-gsap.fromTo(".bottom-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 9);
-gsap.to(".bottom-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 13);
+gsap.fromTo(".bottom-right", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 10);
+gsap.to(".bottom-right", {cursor: 'pointer', ease: "Power0.easeNone"}, 14);
 setTimeout(function() {
   document.querySelector('.bottom-right').addEventListener('click', function() {
     document.querySelector('.projects-item-2').scrollIntoView();
   });
 }, 6000);
 
-gsap.fromTo(".bottom-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 11)
-gsap.to(".bottom-left", {cursor: 'pointer', ease: "Power0.easeNone"}, 16);
+gsap.fromTo(".bottom-left", {opacity: 0}, {duration: 2, opacity: 1, display: "flex", ease: "power2.easeOut"}, 12)
+gsap.to(".bottom-left", {cursor: 'pointer', ease: "Power0.easeNone"}, 17);
 setTimeout(function() {
   document.querySelector('.bottom-left').addEventListener('click', function() {
     document.querySelector('.projects-item-3').scrollIntoView();
