@@ -296,7 +296,7 @@
 .about-me-inner-content .right .button-content .education ul li {
   list-style-type: square;
   margin-left: 1.25rem;
-  text-align: right;
+  text-align: left;
   padding-left: 1rem;
   line-height: 2.5rem;
   list-style-position: inside;
@@ -323,7 +323,8 @@
 .about-me-inner-content .right .button-content h5 {
   font-family: var(--ff-fancy-body-bad-script);
   font-size: 1.25rem;
-  text-align: right;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .about-me-inner-content .right .button-content h5 {
